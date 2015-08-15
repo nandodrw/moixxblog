@@ -1,0 +1,33 @@
+@mixin prefix($property, $value, $vendors: webkit moz ms o) {
+  @if $vendors {
+    @each $vendor in $vendors {
+      #{"-" + $vendor + "-" + $property}: #{$value};
+    }
+  }
+  #{$property}: #{$value};
+}
+
+@mixin prefix-transition-transform($value, $vendors: webkit moz ms o) {
+  @if $vendors {
+    @each $vendor in $vendors {
+      #{"-" + $vendor + "-transition"}: #{"-" + $vendor + "-" + "transform " + $value};
+    }
+  }
+  #{"transition"}: #{"transform " + $value};
+}
+
+@mixin background-linear-gradient($gradients) {
+  $vendors: "-webkit-" "-moz-" "-ms-" "-o-" "";
+  @each $vendor in $vendors {
+    $property: "";
+    @each $gradient in $gradients {
+      @if $property != "" {
+        $property: $property + ", "
+      }
+      $property: $property + $vendor + "linear-gradient(";
+      $property: $property + $gradient;
+      $property: $property + ")";
+    }
+    #{background-image}: #{$property};
+  }
+}

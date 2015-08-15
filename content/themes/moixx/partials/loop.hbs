@@ -1,0 +1,68 @@
+{{! Previous/next page links - only displayed on page 2+ }}
+<!-- <div class="extra-pagination inner">
+    {{pagination}}
+</div> -->
+
+{{! This is the post loop - each post will be output using this markup }}
+
+<div class="gutter-sizer"></div>
+
+{{#foreach posts}}
+
+<article data-url='{{url}}' class="{{post_class}}">
+    <header class="post-header">
+
+        {{#if tags}}
+
+
+
+
+                {{#checkVideo tags}}
+
+
+                    <div class="video-container">
+                        <iframe type="text/html" src="http://www.youtube.com/embed/{{videoUrl tags}}?autoplay=0&amp;modestbranding=1&amp;rel=0" frameborder="0"></iframe>
+                    </div>
+
+
+                {{else}}
+
+                    <div class="post-image" style="background-image : url({{image}})"></div>
+
+                {{/checkVideo}}
+
+
+
+
+
+        {{else}}
+
+            {{#if image}}
+
+                <div class="post-image" style="background-image : url({{image}})"></div>
+
+            {{/if}}
+
+        {{/if}}
+
+
+
+    </header>
+    <section class="post-list-body border-box">
+
+        <h2 class="post-title margin-bottom-1"><a href="{{url}}">{{{title}}}</a></h2>
+
+        <p>{{excerpt words="26"}} <a class="read-more" href="{{url}}">&raquo;</a></p>
+    </section>
+    <footer class="post-meta">
+        <!-- {{#if author.image}}<img class="author-thumb" src="{{author.image}}" alt="{{author.name}}" nopin="nopin" />{{/if}} -->
+        <!-- {{author}} -->
+        <!-- {{tags prefix=" on "}} -->
+        <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
+    </footer>
+</article>
+
+{{/foreach}}
+
+{{! Previous/next page links - displayed on every page }}
+{{pagination}}
