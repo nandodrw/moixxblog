@@ -140,7 +140,7 @@ small, .font_small {
   font-size: 0.833em; }
 
 body {
-  background-color: #bbe9de; }
+  background-color: #EEEEEE; }
 
 .main-header {
   width: 100%; }
@@ -253,8 +253,7 @@ body {
 .content {
   width: 1200px;
   max-width: 100%;
-  margin: auto;
-  padding-top: 3.44rem; }
+  margin: 4.5rem auto 0 auto; }
   @media screen and (max-width: 1200px) {
     .content {
       width: 95%; } }
@@ -263,7 +262,17 @@ body {
   width: 30%;
   background-color: #FFF;
   border-radius: 0.2em;
-  float: left; }
+  float: left;
+  -webkit-box-shadow: 0 0 0 0 #c8c8c8;
+  -moz-box-shadow: 0 0 0 0 #c8c8c8;
+  -ms-box-shadow: 0 0 0 0 #c8c8c8;
+  -o-box-shadow: 0 0 0 0 #c8c8c8;
+  box-shadow: 0 0 0 0 #c8c8c8;
+  -webkit-transition: -webkit-box-shadow 0.1s linear;
+  -moz-transition: -moz-box-shadow 0.1s linear;
+  -ms-transition: -ms-box-shadow 0.1s linear;
+  -o-transition: -o-box-shadow 0.1s linear;
+  transition: box-shadow 0.1s linear; }
   @media screen and (max-width: 1200px) {
     .content .post {
       width: 47.5%; } }
@@ -273,7 +282,7 @@ body {
   color: #000; }
 
 .content .post .post-title a:active {
-  color: #ed8806; }
+  color: #d47a06; }
 
 .content .post-image {
   width: 100%;
@@ -288,11 +297,21 @@ body {
   background-position: 50% 0; }
 
 .content .post:hover {
-  cursor: pointer; }
+  cursor: pointer;
+  background-color: #bbe9de;
+  -webkit-box-shadow: 0 0 4px 2px #bbbbbb;
+  -moz-box-shadow: 0 0 4px 2px #bbbbbb;
+  -ms-box-shadow: 0 0 4px 2px #bbbbbb;
+  -o-box-shadow: 0 0 4px 2px #bbbbbb;
+  box-shadow: 0 0 4px 2px #bbbbbb; }
   .content .post:hover .post-image {
     background-size: 105%; }
   .content .post:hover .post-title a {
     color: #f9a02d; }
+  .content .post:hover .read-more, .content .post:hover p {
+    color: #ed8806; }
+  .content .post:hover .post-date {
+    color: #FFF; }
 
 .content .post-list-body {
   padding: 20px; }

@@ -16,6 +16,15 @@
   #{"transition"}: #{"transform " + $value};
 }
 
+@mixin double-prefix-transition($property, $value, $vendors: webkit moz ms o) {
+  @if $vendors {
+    @each $vendor in $vendors {
+      #{"-" + $vendor + "-transition"}: #{"-" + $vendor + "-"  + $property + " " + $value};
+    }
+  }
+  #{"transition"}: #{$property + " " + $value};
+}
+
 @mixin background-linear-gradient($gradients) {
   $vendors: "-webkit-" "-moz-" "-ms-" "-o-" "";
   @each $vendor in $vendors {

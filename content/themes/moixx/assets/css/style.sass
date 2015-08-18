@@ -6,7 +6,7 @@
 @import "build/fonts"
 
 body
-  background-color: $green-pantone
+  background-color: $gris
 
 // ********************************************
 // *************** nav bar ********************
@@ -124,8 +124,7 @@ body
 .content
   width: 1200px
   max-width: 100%
-  margin: auto
-  padding-top: $nav-bar-height
+  margin: 4.5rem auto 0 auto
   @media screen and (max-width: 1200px)
     width: 95%
 
@@ -140,6 +139,8 @@ body
   background-color: $blanco
   border-radius: .2em
   float: left
+  @include prefix(box-shadow, "0 0 0 0 " +  darken($gris, 15%))
+  @include double-prefix-transition(box-shadow, "0.1s linear")
   @media screen and (max-width: 1200px)
     width: 47.5%
 
@@ -148,7 +149,7 @@ body
   color: $negro
 
 .content .post .post-title a:active
-  color: darken($gold-foil, 15%)
+  color: darken($gold-foil, 20%)
 
 .content .post-image
   width: 100%
@@ -160,10 +161,16 @@ body
 
 .content .post:hover
   cursor: pointer
+  background-color: $green-pantone
+  @include prefix(box-shadow, "0 0 4px 2px " + darken($gris, 20%))
   .post-image
     background-size: 105%
   .post-title a
     color: darken($gold-foil, 5%)
+  .read-more, p
+    color: darken($gold-foil, 15%)
+  .post-date
+    color: $blanco
 
 
 .content .post-list-body
