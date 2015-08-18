@@ -149,7 +149,7 @@ body
   color: $negro
 
 .content .post .post-title a:active
-  color: darken($gold-foil, 20%)
+  color: $blanco
 
 .content .post-image
   width: 100%
@@ -161,14 +161,14 @@ body
 
 .content .post:hover
   cursor: pointer
-  background-color: $green-pantone
+  background-color: darken($green-pantone, 12%)
   @include prefix(box-shadow, "0 0 4px 2px " + darken($gris, 20%))
   .post-image
     background-size: 105%
   .post-title a
-    color: darken($gold-foil, 5%)
+    color: $blanco
   .read-more, p
-    color: darken($gold-foil, 15%)
+    color: $blanco
   .post-date
     color: $blanco
 

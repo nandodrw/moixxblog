@@ -282,7 +282,7 @@ body {
   color: #000; }
 
 .content .post .post-title a:active {
-  color: #d47a06; }
+  color: #FFF; }
 
 .content .post-image {
   width: 100%;
@@ -298,7 +298,7 @@ body {
 
 .content .post:hover {
   cursor: pointer;
-  background-color: #bbe9de;
+  background-color: #8ddac8;
   -webkit-box-shadow: 0 0 4px 2px #bbbbbb;
   -moz-box-shadow: 0 0 4px 2px #bbbbbb;
   -ms-box-shadow: 0 0 4px 2px #bbbbbb;
@@ -307,9 +307,9 @@ body {
   .content .post:hover .post-image {
     background-size: 105%; }
   .content .post:hover .post-title a {
-    color: #f9a02d; }
+    color: #FFF; }
   .content .post:hover .read-more, .content .post:hover p {
-    color: #ed8806; }
+    color: #FFF; }
   .content .post:hover .post-date {
     color: #FFF; }
 
