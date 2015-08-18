@@ -72,9 +72,9 @@ body
   .hover-gold
     display: none
   .regular
-    display: block
-  .hover
     display: none
+  .hover
+    display: block
 
 .top .blog-logo:hover
   .hover-gold
@@ -198,28 +198,32 @@ body
 
 .left-nav
   position: fixed
-  top: $nav-bar-height + 2
-  bottom: 1em
+  top: 0
+  bottom: 0
   left: 0
   z-index: 10
   @include prefix(transform, translate3d(-150px, 0, 0))
-  @include prefix-transition-transform("0.4s cubic-bezier(.62,.02,.6,.3) 0s")
+  @include prefix-transition-transform("0.3s cubic-bezier(.62,.02,.6,.3) 0s")
   .nav-buttons
     height: 100%
     width: 150px
-    background-color: rgba(198, 179, 115, 0.75)
+    background-color: $negro
     overflow-y: scroll
-    border-top-right-radius: 0.25em
-    border-bottom-right-radius: 0.25em
     float: left
     .btn
-      height: 16.66%
+      height: 13.33%
       min-height: 100px
       width: 100%
       padding: 0.5em
       @include prefix(box-sizing, border-box)
       background-color: transparent
       @include prefix(transition, "background-color 0.2s")
+    .logo-btn
+      height: 20%
+      min-height: 100px
+      width: 100%
+      padding: 0.5em
+      @include prefix(box-sizing, border-box)
 
 .left-nav:hover
   @include prefix(transform, translate3d(0, 0, 0))
@@ -235,23 +239,31 @@ body
     text-align: center
     color: $blanco
 
+.left-nav .nav-buttons
+  .logo
+    width: 100%
+    height: 100%
+    background-size: 90%
+    background-position: center
+    background-repeat: no-repeat
+
 .left-nav .nav-buttons .btn:hover
-  background-color: rgba(198, 179, 115, 0.85)
-  .tag
-    text-align: center
+  background-color: $gold-foil
 
 .left-nav .nav-controller
   float: left
-  width: 2.5em
-  padding: 0.7em 0.25em
-  background-color: rgba(198, 179, 115, 9)
+  width: 4em
+  height: 5em
+  background-color: $negro
   position: relative
   top: 45%
   border-top-right-radius: 0.25em
   border-bottom-right-radius: 0.25em
-  .typo
-    font-size: 1.44em
-    color: $blanco
+  background-size: 70%
+  background-position: center
+  background-repeat: no-repeat
+
+
 
 
 

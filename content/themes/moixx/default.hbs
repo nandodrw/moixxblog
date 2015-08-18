@@ -32,8 +32,8 @@
                 <!-- {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>{{/if}}
              -->
             <a class="blog-logo" href="{{@blog.url}}">
-                <img class='regular' src="{{asset "images/dark-logo.png"}}" alt="{{@blog.title}}"/>
-                <img class='hover' src="{{asset "images/light-logo.png"}}" alt="{{@blog.title}}"/>
+                <img class='hover' src="{{asset "images/dark-logo.png"}}" alt="{{@blog.title}}"/>
+                <img class='regular' src="{{asset "images/light-logo.png"}}" alt="{{@blog.title}}"/>
                 <img class='hover-gold' src="{{asset "images/gold-logo.png"}}" alt="{{@blog.title}}"/>
             </a>
 
@@ -54,6 +54,12 @@
 
     <nav class='left-nav'>
       <ul class="nav-buttons">
+
+        <ol class="logo-btn">
+            <a href="/">
+                <div class="logo" style="background-image : url({{asset "images/btn-logo.png"}})"></div>
+            </a>
+        </ol>
         <ol class="btn">
           <a href="/tag/belleza/">
             <div class="button-holder" style="background-image : url({{asset "images/belleza-btn.png"}})"></div>
@@ -91,11 +97,7 @@
           </a>
         </ol>
       </ul>
-      <div class="nav-controller">
-        <span class='typo'>M</span>
-        <span class='typo'>E</span>
-        <span class='typo'>N</span>
-        <span class='typo'>&#218;</span>
+      <div class="nav-controller" style="background-image : url({{asset "images/isotipo.png"}})">
       </div>
     </nav>
 
