@@ -1,9 +1,9 @@
 {
-  "name": "ghost",
-  "version": "0.6.4",
+  "name": "Moixx Ghost Modification",
+  "version": "1.0.0",
   "description": "Just a blogging platform.",
-  "author": "Ghost Foundation",
-  "homepage": "http://ghost.org",
+  "author": "Fernando Catacora",
+  "homepage": "www.nandodrw.com",
   "keywords": [
     "ghost",
     "blog",
