@@ -13,8 +13,10 @@ config = {
         url: 'http://www.moixx.com.pe/',
         mail: {
             transport: 'SMTP',
+            port: '2525',
             options: {
                 service: 'Mailgun',
+                port: '2525',
                 auth: {
                     user: 'postmaster@sandbox864979b4979044e6bc12d2410ef2d1ad.mailgun.org',
                     pass: 'cc3d1764252dede85e7a55d4e68c0521'
@@ -52,12 +54,13 @@ config = {
         mail: {
          transport: 'SMTP',
          options: {
-             service: 'Gmail',
-             auth: {
-                 user: 'nando.drw@gmail.com', // mailgun username
-                 pass: 'abc'  // mailgun password
-             }
-         }
+                service: 'Mailgun',
+                port: '2525',
+                auth: {
+                    user: 'postmaster@sandbox864979b4979044e6bc12d2410ef2d1ad.mailgun.org',
+                    pass: 'cc3d1764252dede85e7a55d4e68c0521'
+                }
+            }
         },
         // ```
 
