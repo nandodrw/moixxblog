@@ -13,11 +13,14 @@ config = {
         url: 'http://www.moixx.com.pe/',
         mail: {},
         database: {
-            client: 'sqlite3',
-            connection: {
-                filename: path.join(__dirname, '/content/data/ghost.db')
-            },
-            debug: false
+          client: 'mysql',
+          connection: {
+            host     : '173.194.226.175',
+            user     : 'blog',
+            password : 'blog',
+            database : 'ghost_db',
+            charset  : 'utf8'
+          }
         },
 
         server: {
