@@ -11,7 +11,16 @@ config = {
     // Configure your URL and mail settings here
     production: {
         url: 'http://www.moixx.com.pe/',
-        mail: {},
+        mail: {
+            transport: 'SMTP',
+            options: {
+                service: 'Mailgun',
+                auth: {
+                    user: 'MAIL_USER',
+                    pass: 'MAIL_PASS'
+                }
+            }
+        },
         database: {
           client: 'mysql',
           connection: {
