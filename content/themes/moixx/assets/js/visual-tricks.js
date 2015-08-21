@@ -4,11 +4,28 @@
 
   var setTop = true;
 
+  function getNavBarTranslation(){
+    var topDistance = 500;
+    topDistance = topDistance - w.scrollY;
+    if (topDistance < 0) {
+      topDistance = 0;
+    }
+    return "translate3d(0, " + topDistance + "px, 0)";
+  }
+
   function setTopNavbarStyle(){
 
     $('.main-nav').removeClass('floating');
     $('.main-nav').addClass('top');
     setTop = true;
+
+    // $('.main-nav').css({
+    //   "transform" : getNavBarTranslation,
+    //   "-webkit-transform" : getNavBarTranslation,
+    //   "-moz-transform" : getNavBarTranslation,
+    //   "-ms-transform" : getNavBarTranslation,
+    //   "-o-transform" : getNavBarTranslation
+    // })
 
   }
 
@@ -22,14 +39,17 @@
 
   $(w).scroll(function(){
 
-    if(w.scrollY < 100) {
-      if(!setTop){
-        setTopNavbarStyle();
+    if(w.location.pathname == '/'){
+
+      if(w.scrollY >= 450) {
+
+          setTopNavbarStyle();
+
+      } else {
+
+          setFloatingNavar();
       }
-    } else {
-      if(setTop){
-        setFloatingNavar();
-      }
+
     }
 
   });

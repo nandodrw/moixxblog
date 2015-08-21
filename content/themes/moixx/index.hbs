@@ -4,6 +4,36 @@
 {{! The big featured header }}
 
 
+<header class="main-header">
+
+
+
+    <div class="top-image-background">
+      <div class="cover"></div>
+    </div>
+
+    <nav class="main-nav floating overlay clearfix">
+
+        <a class="top-link link-1 top-nav-image" href="{{@blog.url}}">
+            <img class='dark inline' src="{{asset "images/tiendas-black.png"}}"/>
+            <img class='light inline' src="{{asset "images/tiendas-light.png"}}"/>
+            <img class='golden inline' src="{{asset "images/tiendas-gold.png"}}"/>
+            <span class='label'>Tiendas</span>
+        </a>
+
+
+        <a class="blog-logo top-nav-image" href="{{@blog.url}}">
+            <img class='dark' src="{{asset "images/dark-logo.png"}}"/>
+            <img class='light' src="{{asset "images/light-logo.png"}}"/>
+            <img class='golden' src="{{asset "images/gold-logo.png"}}"/>
+        </a>
+
+    </nav>
+
+</header>
+
+
+
 {{! The main content area on the homepage }}
 <main id="content" class="content" role="main">
 
