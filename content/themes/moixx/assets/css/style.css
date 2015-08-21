@@ -80,6 +80,13 @@ a {
   -o-box-sizing: border-box;
   box-sizing: border-box; }
 
+.center-left-move {
+  -webkit-transform: translate3d(-50%, 0, 0);
+  -moz-transform: translate3d(-50%, 0, 0);
+  -ms-transform: translate3d(-50%, 0, 0);
+  -o-transform: translate3d(-50%, 0, 0);
+  transform: translate3d(-50%, 0, 0); }
+
 @font-face {
   font-family: bg-reg;
   src: url(../fonts/BrandonGrotesque-Regular.woff); }
@@ -173,48 +180,81 @@ body {
 
 .blog-logo {
   position: absolute;
-  -webkit-transform: translate3d(0, -50%, 0);
-  -moz-transform: translate3d(0, -50%, 0);
-  -ms-transform: translate3d(0, -50%, 0);
-  -o-transform: translate3d(0, -50%, 0);
-  transform: translate3d(0, -50%, 0);
-  left: 1em;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  -moz-transform: translate3d(-50%, -50%, 0);
+  -ms-transform: translate3d(-50%, -50%, 0);
+  -o-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
   top: 50%;
+  left: 50%;
   height: 54%; }
   .blog-logo img {
+    margin: auto;
     height: 100%; }
   .blog-logo .regular {
     display: block; }
   .blog-logo .hover {
     display: none; }
 
-.floating .blog-logo .hover-gold {
-  display: none; }
-.floating .blog-logo .regular {
-  display: block; }
-.floating .blog-logo .hover {
-  display: none; }
+.top-link {
+  position: absolute;
+  -webkit-transform: translate3d(0, -50%, 0);
+  -moz-transform: translate3d(0, -50%, 0);
+  -ms-transform: translate3d(0, -50%, 0);
+  -o-transform: translate3d(0, -50%, 0);
+  transform: translate3d(0, -50%, 0);
+  top: 50%;
+  left: 20%;
+  height: 54%; }
+  .top-link img {
+    max-height: 100%; }
+  .top-link .label {
+    display: inline-block;
+    font-size: 1.44em; }
 
-.floating .blog-logo:hover .hover-gold {
+.floating .top-nav-image .hover-gold {
   display: none; }
-.floating .blog-logo:hover .regular {
-  display: none; }
-.floating .blog-logo:hover .hover {
+.floating .top-nav-image .regular {
   display: block; }
+.floating .top-nav-image .regular.inline {
+  display: inline-block; }
+.floating .top-nav-image .hover {
+  display: none; }
+.floating .top-nav-image .label {
+  color: #FFF; }
 
-.top .blog-logo .hover-gold {
+.floating .top-nav-image:hover .hover-gold {
   display: none; }
-.top .blog-logo .regular {
+.floating .top-nav-image:hover .regular {
   display: none; }
-.top .blog-logo .hover {
+.floating .top-nav-image:hover .hover.inline {
+  display: inline-block; }
+.floating .top-nav-image:hover .hover {
   display: block; }
+.floating .top-nav-image:hover .label {
+  color: #615d59; }
 
-.top .blog-logo:hover .hover-gold {
+.top .top-nav-image .hover-gold {
+  display: none; }
+.top .top-nav-image .regular {
+  display: none; }
+.top .top-nav-image .hover.inline {
+  display: inline-block; }
+.top .top-nav-image .hover {
   display: block; }
-.top .blog-logo:hover .regular {
+.top .top-nav-image .label {
+  color: #615d59; }
+
+.top .top-nav-image:hover .hover-gold.inline {
+  display: inline-block; }
+.top .top-nav-image:hover .hover-gold {
+  display: block; }
+.top .top-nav-image:hover .regular {
   display: none; }
-.top .blog-logo:hover .hover {
+.top .top-nav-image:hover .hover {
   display: none; }
+.top .top-nav-image:hover .label {
+  color: #FAAB46; }
 
 .center-menu {
   position: absolute;

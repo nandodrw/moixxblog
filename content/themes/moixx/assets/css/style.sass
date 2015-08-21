@@ -41,48 +41,78 @@ body
 // blog logo in nav bar
 .blog-logo
   position: absolute
-  @include prefix(transform, translate3d(0, -50%, 0))
-  left: 1em
+  @include prefix(transform, translate3d(-50%, -50%, 0))
   top: 50%
+  left: 50%
   height: 54%
   img
+    margin: auto
     height: 100%
   .regular
     display: block
   .hover
     display: none
 
-.floating .blog-logo
-  .hover-gold
-    display: none
-  .regular
-    display: block
-  .hover
-    display: none
+.top-link
+  position: absolute
+  @include prefix(transform, translate3d(0, -50%, 0))
+  top: 50%
+  left: 20%
+  height: 54%
+  img
+    max-height: 100%
+  .label
+    display: inline-block
+    font-size: 1.44em
 
-.floating .blog-logo:hover
-  .hover-gold
-    display: none
-  .regular
-    display: none
-  .hover
-    display: block
 
-.top .blog-logo
+.floating .top-nav-image
   .hover-gold
     display: none
   .regular
-    display: none
-  .hover
     display: block
+  .regular.inline
+    display: inline-block
+  .hover
+    display: none
+  .label
+    color: $blanco
 
-.top .blog-logo:hover
+.floating .top-nav-image:hover
+  .hover-gold
+    display: none
+  .regular
+    display: none
+  .hover.inline
+    display: inline-block
+  .hover
+    display: block
+  .label
+    color: $black-pantone
+
+.top .top-nav-image
+  .hover-gold
+    display: none
+  .regular
+    display: none
+  .hover.inline
+    display: inline-block
+  .hover
+    display: block
+  .label
+    color: $black-pantone
+
+.top .top-nav-image:hover
+  .hover-gold.inline
+    display: inline-block
   .hover-gold
     display: block
   .regular
     display: none
   .hover
     display: none
+  .label
+    color: $gold-foil
 
 // **********************
 

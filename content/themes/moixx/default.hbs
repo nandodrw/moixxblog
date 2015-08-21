@@ -27,28 +27,23 @@
 
     <header class="main-header">
 
-        <nav class="main-nav floating overlay clearfix">
+        <nav class="main-nav top overlay clearfix">
 
-                <!-- {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>{{/if}}
-             -->
-            <a class="blog-logo" href="{{@blog.url}}">
-                <img class='hover' src="{{asset "images/dark-logo.png"}}" alt="{{@blog.title}}"/>
-                <img class='regular' src="{{asset "images/light-logo.png"}}" alt="{{@blog.title}}"/>
-                <img class='hover-gold' src="{{asset "images/gold-logo.png"}}" alt="{{@blog.title}}"/>
+            <a class="top-link link-1 top-nav-image" href="{{@blog.url}}">
+                <img class='hover inline' src="{{asset "images/tiendas-black.png"}}"/>
+                <img class='regular inline' src="{{asset "images/tiendas-light.png"}}"/>
+                <img class='hover-gold inline' src="{{asset "images/tiendas-gold.png"}}"/>
+                <span class='label'>Tiendas</span>
             </a>
 
-               <!--  {{#if @blog.navigation}}
-                    <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
-                {{/if}} -->
 
-            <ul class="center-menu">
-                <ol class="nav-link-container"><a href="" class="nav-link"> <rel class="label-link">Tiendas</rel></a></ol>
-                <ol class="nav-link-container margin-left-3"><a class="nav-link" href=""> <rel class="label-link">Nosotros</rel></a></ol>
-            </ul>
+            <a class="blog-logo top-nav-image" href="{{@blog.url}}">
+                <img class='hover' src="{{asset "images/dark-logo.png"}}"/>
+                <img class='regular' src="{{asset "images/light-logo.png"}}"/>
+                <img class='hover-gold' src="{{asset "images/gold-logo.png"}}"/>
+            </a>
 
         </nav>
-
-        <!-- <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a> -->
 
     </header>
 
