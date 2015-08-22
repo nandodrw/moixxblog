@@ -207,6 +207,23 @@ body {
   .blog-logo .hover {
     display: none; }
 
+.social-media-link {
+  top: 50%;
+  right: 2em;
+  height: 0.7em;
+  position: absolute;
+  -webkit-transform: translate3d(0, -50%, 0);
+  -moz-transform: translate3d(0, -50%, 0);
+  -ms-transform: translate3d(0, -50%, 0);
+  -o-transform: translate3d(0, -50%, 0);
+  transform: translate3d(0, -50%, 0); }
+  .social-media-link .social-link {
+    float: left;
+    max-height: 100%; }
+    .social-media-link .social-link .icon {
+      height: 0.9em;
+      display: inline-block; }
+
 .top-link {
   position: absolute;
   -webkit-transform: translate3d(0, -50%, 0);
@@ -404,7 +421,7 @@ body {
   -o-transition: -o-transform 0.3s cubic-bezier(.62,.02,.6,.3) 0s;
   transition: transform 0.3s cubic-bezier(.62,.02,.6,.3) 0s;
   height: 100%;
-  width: 12%;
+  width: 12.1%;
   background-color: #000;
   overflow-y: scroll;
   float: left; }

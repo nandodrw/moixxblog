@@ -69,6 +69,21 @@ body
   .hover
     display: none
 
+.social-media-link
+  top: 50%
+  right: 2em
+  height: 0.7em
+  position: absolute
+  @include prefix(transform, translate3d(0, -50%, 0))
+  .social-link
+    float: left
+    max-height: 100%
+    .icon
+      height: 0.9em
+      display: inline-block
+
+
+
 .top-link
   position: absolute
   @include prefix(transform, translate3d(0, -50%, 0))
@@ -80,6 +95,7 @@ body
   .label
     display: inline-block
     font-size: 1.44em
+
 
 
 .floating .top-nav-image
@@ -255,7 +271,7 @@ body
   @include prefix(transform, translate3d(-66.66%, 0, 0))
   @include prefix-transition-transform("0.3s cubic-bezier(.62,.02,.6,.3) 0s")
   height: 100%
-  width: 12%
+  width: 12.1%
   background-color: $negro
   overflow-y: scroll
   float: left
