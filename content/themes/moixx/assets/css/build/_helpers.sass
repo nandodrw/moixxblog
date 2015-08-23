@@ -3,3 +3,12 @@
 
 .center-left-move
   @include prefix(transform, translate3d(-50%, 0, 0))
+
+.center-top-move
+  @include prefix(transform, translate3d(0, -50%, 0))
+
+.center-axis
+  position: absolute
+  left: 50%
+  top: 50%
+  @include prefix(transform, translate3d(-50%, -50%, 0))

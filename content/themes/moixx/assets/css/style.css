@@ -87,6 +87,23 @@ a {
   -o-transform: translate3d(-50%, 0, 0);
   transform: translate3d(-50%, 0, 0); }
 
+.center-top-move {
+  -webkit-transform: translate3d(0, -50%, 0);
+  -moz-transform: translate3d(0, -50%, 0);
+  -ms-transform: translate3d(0, -50%, 0);
+  -o-transform: translate3d(0, -50%, 0);
+  transform: translate3d(0, -50%, 0); }
+
+.center-axis {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  -moz-transform: translate3d(-50%, -50%, 0);
+  -ms-transform: translate3d(-50%, -50%, 0);
+  -o-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0); }
+
 @font-face {
   font-family: bg-reg;
   src: url(../fonts/BrandonGrotesque-Regular.woff); }
@@ -425,11 +442,12 @@ body {
   background-color: #000;
   overflow-y: scroll;
   float: left; }
+  .left-nav .nav-buttons {
+    height: 100%; }
   .left-nav .btn {
     height: 13.33%;
     min-height: 100px;
     width: 100%;
-    padding: 0.5em;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -440,7 +458,8 @@ body {
     -moz-transition: background-color 0.2s;
     -ms-transition: background-color 0.2s;
     -o-transition: background-color 0.2s;
-    transition: background-color 0.2s; }
+    transition: background-color 0.2s;
+    position: relative; }
   .left-nav .logo-btn {
     height: 20%;
     min-height: 100px;
@@ -452,22 +471,43 @@ body {
     -o-box-sizing: border-box;
     box-sizing: border-box; }
 
+.left-nav .btn a {
+  display: block;
+  height: 100%;
+  width: 100%; }
+
 .left-nav:hover {
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0);
   -o-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0); }
+  .left-nav:hover .nav-buttons .tag {
+    width: 70%; }
 
-.left-nav .nav-buttons .button-holder {
-  width: 100%;
-  height: 80%;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat; }
 .left-nav .nav-buttons .tag {
-  text-align: center;
-  color: #FFF; }
+  text-align: left;
+  overflow: hidden;
+  color: #FFF;
+  width: 70%;
+  position: absolute;
+  left: 1.5%;
+  top: 50%; }
+.left-nav .nav-buttons .button-holder {
+  width: 30%;
+  height: 100%;
+  right: 1.5%;
+  position: relative;
+  float: right; }
+  .left-nav .nav-buttons .button-holder .icon-holder {
+    width: 100%;
+    max-width: 90%;
+    max-height: 80%;
+    min-height: 40px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute; }
 
 .left-nav .nav-buttons .logo {
   width: 100%;
@@ -478,6 +518,18 @@ body {
 
 .left-nav .nav-buttons .btn:hover {
   background-color: #FAAB46; }
+  .left-nav .nav-buttons .btn:hover .button-holder .icon-holder.beauthy {
+    background-image: url(../images/belleza.png); }
+  .left-nav .nav-buttons .btn:hover .button-holder .icon-holder.goodnes {
+    background-image: url(../images/salud.png); }
+  .left-nav .nav-buttons .btn:hover .button-holder .icon-holder.deco {
+    background-image: url(../images/deco.png); }
+  .left-nav .nav-buttons .btn:hover .button-holder .icon-holder.tv {
+    background-image: url(../images/tv.png); }
+  .left-nav .nav-buttons .btn:hover .button-holder .icon-holder.destiny {
+    background-image: url(../images/destinos.png); }
+  .left-nav .nav-buttons .btn:hover .button-holder .icon-holder.fashion {
+    background-image: url(../images/moda.png); }
 
 .left-nav .nav-controller {
   float: left;
