@@ -459,7 +459,8 @@ body {
     -ms-transition: background-color 0.2s;
     -o-transition: background-color 0.2s;
     transition: background-color 0.2s;
-    position: relative; }
+    position: relative;
+    cursor: pointer; }
   .left-nav .logo-btn {
     height: 20%;
     min-height: 100px;

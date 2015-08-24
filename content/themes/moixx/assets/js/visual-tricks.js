@@ -19,14 +19,6 @@
     $('.main-nav').addClass('top');
     setTop = true;
 
-    // $('.main-nav').css({
-    //   "transform" : getNavBarTranslation,
-    //   "-webkit-transform" : getNavBarTranslation,
-    //   "-moz-transform" : getNavBarTranslation,
-    //   "-ms-transform" : getNavBarTranslation,
-    //   "-o-transform" : getNavBarTranslation
-    // })
-
   }
 
   function setFloatingNavar(){
@@ -70,5 +62,11 @@
   $('.post').click(function(){
     w.location.href = this.dataset.url;
   });
+
+
+  $('.btn').click(function(){
+    w.location.href = this.dataset.link;
+  });
+
 
 })(window, document, jQuery);
