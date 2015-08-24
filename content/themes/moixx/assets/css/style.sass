@@ -290,8 +290,16 @@ body
     height: 20%
     min-height: 100px
     width: 100%
-    padding: 0.5em
     @include prefix(box-sizing, border-box)
+    .logo-holder
+      float: right
+      height: 100%
+      width: 30%
+      background-size: 90%
+      background-repeat: no-repeat
+      background-position: center
+      background-image: url(../images/isotipo.png)
+
 
 .left-nav .btn a
   display: block
@@ -300,8 +308,9 @@ body
 
 .left-nav:hover
   @include prefix(transform, translate3d(0, 0, 0))
-  .nav-buttons .tag
-    width: 70%
+  .logo-btn .logo-holder
+    width: 100%
+    background-image: url(../images/btn-logo.png)
 
 .left-nav .nav-buttons
   .tag

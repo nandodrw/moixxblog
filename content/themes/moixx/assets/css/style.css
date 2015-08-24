@@ -465,12 +465,19 @@ body {
     height: 20%;
     min-height: 100px;
     width: 100%;
-    padding: 0.5em;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     -o-box-sizing: border-box;
     box-sizing: border-box; }
+    .left-nav .logo-btn .logo-holder {
+      float: right;
+      height: 100%;
+      width: 30%;
+      background-size: 90%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url(../images/isotipo.png); }
 
 .left-nav .btn a {
   display: block;
@@ -483,8 +490,9 @@ body {
   -ms-transform: translate3d(0, 0, 0);
   -o-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0); }
-  .left-nav:hover .nav-buttons .tag {
-    width: 70%; }
+  .left-nav:hover .logo-btn .logo-holder {
+    width: 100%;
+    background-image: url(../images/btn-logo.png); }
 
 .left-nav .nav-buttons .tag {
   text-align: left;
