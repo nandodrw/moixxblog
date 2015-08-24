@@ -29,9 +29,20 @@
 
   }
 
+  function checkLocationPostList(){
+    var location = w.location.pathname;
+
+    if(location == '/') return true;
+
+    if(location.indexOf('page/') == 1 ) return true;
+
+    return false;
+
+  }
+
   $(w).scroll(function(){
 
-    if(w.location.pathname == '/'){
+    if(checkLocationPostList()){
 
       if(w.scrollY >= 450) {
 

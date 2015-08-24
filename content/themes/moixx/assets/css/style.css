@@ -554,4 +554,16 @@ body {
   background-position: center;
   background-repeat: no-repeat; }
 
+.pagination {
+  width: 100%;
+  background-color: red; }
+
+.main-footer {
+  width: 100%;
+  background-color: #000;
+  position: relative;
+  height: 5em; }
+  .main-footer .logo {
+    height: 4em; }
+
 /*# sourceMappingURL=style.css.map */
