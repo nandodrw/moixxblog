@@ -10,7 +10,7 @@ config = {
     // When running Ghost in the wild, use the production environment
     // Configure your URL and mail settings here
     production: {
-        url: 'http://www.moixx.com.pe/',
+        url: 'http://www.moixxlife.com',
         mail: {
             transport: 'SMTP',
             port: '2525',
@@ -18,8 +18,8 @@ config = {
                 service: 'Mailgun',
                 port: '2525',
                 auth: {
-                    user: 'postmaster@sandbox864979b4979044e6bc12d2410ef2d1ad.mailgun.org',
-                    pass: 'cc3d1764252dede85e7a55d4e68c0521'
+                    user: 'postmaster@mg.moixxlife.com',
+                    pass: 'pierfernandez21'
                 }
             }
         },
