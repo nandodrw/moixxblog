@@ -474,7 +474,7 @@ body {
       float: right;
       height: 100%;
       width: 30%;
-      background-size: 90%;
+      background-size: 85%;
       background-repeat: no-repeat;
       background-position: center;
       background-image: url(../images/isotipo.png); }
@@ -492,7 +492,8 @@ body {
   transform: translate3d(0, 0, 0); }
   .left-nav:hover .logo-btn .logo-holder {
     width: 100%;
-    background-image: url(../images/btn-logo.png); }
+    background-image: url(../images/btn-logo.png);
+    background-size: auto 90%; }
 
 .left-nav .nav-buttons .tag {
   text-align: left;
