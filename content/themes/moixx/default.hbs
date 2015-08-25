@@ -71,7 +71,8 @@
       </ul>
     </nav>
 
-    <div class="site-wrapper">
+
+        <div class="site-wrapper">
 
 
 
@@ -80,16 +81,15 @@
         {{! Everything else gets inserted here }}
         {{{body}}}
 
-        {{! Previous/next page links - displayed on every page }}
-        <div class="pagination">
-            {{pagination}}
+
         </div>
 
-        <footer class="main-footer">
-            <img class="center-axis logo"  src="{{asset "images/btn-logo.png"}}" alt="Moixx">
-        </footer>
 
-    </div>
+
+
+     <footer class="main-footer">
+        <img class="center-axis logo"  src="{{asset "images/btn-logo.png"}}" alt="Moixx">
+    </footer>
 
     {{! Ghost outputs important scripts and data with this tag }}
     {{ghost_foot}}

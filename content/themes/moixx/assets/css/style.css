@@ -172,23 +172,30 @@ body {
 .main-header {
   width: 100%; }
 
-.main-nav {
-  position: absolute;
+.main-nav, .main-post-nav {
   z-index: 10;
   left: 4%;
-  top: 450px;
   width: 96%;
   height: 50px;
-  -webkit-box-shadow: 0px 10px 10px -7px #464441;
-  -moz-box-shadow: 0px 10px 10px -7px #464441;
-  -ms-box-shadow: 0px 10px 10px -7px #464441;
-  -o-box-shadow: 0px 10px 10px -7px #464441;
-  box-shadow: 0px 10px 10px -7px #464441;
   -webkit-transition: background-color 0.4s, border-color 0.2s;
   -moz-transition: background-color 0.4s, border-color 0.2s;
   -ms-transition: background-color 0.4s, border-color 0.2s;
   -o-transition: background-color 0.4s, border-color 0.2s;
   transition: background-color 0.4s, border-color 0.2s; }
+
+.main-nav {
+  position: absolute;
+  top: 450px;
+  -webkit-box-shadow: 0px 10px 10px -7px #464441;
+  -moz-box-shadow: 0px 10px 10px -7px #464441;
+  -ms-box-shadow: 0px 10px 10px -7px #464441;
+  -o-box-shadow: 0px 10px 10px -7px #464441;
+  box-shadow: 0px 10px 10px -7px #464441; }
+
+.main-post-nav {
+  background-color: #FFF;
+  position: fixed;
+  top: 0; }
 
 .main-nav.floating {
   background-color: transparent; }
@@ -259,6 +266,28 @@ body {
   .top-link .label {
     display: inline-block;
     font-size: 1.44em; }
+
+.main-post-nav .top-nav-image .dark {
+  display: block; }
+.main-post-nav .top-nav-image .dark.inline {
+  display: inline-block; }
+.main-post-nav .top-nav-image .light {
+  display: none; }
+.main-post-nav .top-nav-image .golden {
+  display: none; }
+.main-post-nav .top-nav-image .label {
+  color: #615d59; }
+
+.main-post-nav .top-nav-image:hover .dark {
+  display: none; }
+.main-post-nav .top-nav-image:hover .light {
+  display: none; }
+.main-post-nav .top-nav-image:hover .golden {
+  display: block; }
+.main-post-nav .top-nav-image:hover .golden.inline {
+  display: inline-block; }
+.main-post-nav .top-nav-image:hover .label {
+  color: #FAAB46; }
 
 .floating .top-nav-image .dark {
   display: none; }
@@ -338,19 +367,27 @@ body {
   .nav-link:hover .label-link {
     color: #FAAB46; }
 
-.site-wrapper {
+.home-template .site-wrapper, .post-template .site-wrapper {
   width: 96%;
   margin-left: 4%; }
 
-.content {
+.home-template .content {
   width: 1200px;
   max-width: 100%;
   margin: 4.5rem auto 0 auto; }
   @media screen and (max-width: 1200px) {
-    .content {
+    .home-template .content {
       width: 95%; } }
 
-.content .post {
+.post-template .content {
+  width: 950px;
+  max-width: 100%;
+  margin: 4.5rem auto 0 auto; }
+  @media screen and (max-width: 1200px) {
+    .post-template .content {
+      width: 90%; } }
+
+.home-template .content .post {
   width: 30%;
   background-color: #FFF;
   border-radius: 0.2em;
@@ -365,20 +402,20 @@ body {
   -ms-transition: -ms-box-shadow 0.1s linear;
   -o-transition: -o-box-shadow 0.1s linear;
   transition: box-shadow 0.1s linear; }
-  .content .post p {
+  .home-template .content .post p {
     font-size: 1.44em; }
   @media screen and (max-width: 1200px) {
-    .content .post {
+    .home-template .content .post {
       width: 47.5%; } }
 
-.content .post .post-title a {
+.home-template .content .post .post-title a {
   font-family: bg-medium;
   color: #000; }
 
-.content .post .post-title a:active {
+.home-template .content .post .post-title a:active {
   color: #FFF; }
 
-.content .post-image {
+.home-template .content .post-image {
   width: 100%;
   height: 300px;
   background-size: 100%;
@@ -390,7 +427,7 @@ body {
   transition: background-size 0.4s;
   background-position: 50% 0; }
 
-.content .post:hover {
+.home-template .content .post:hover {
   cursor: pointer;
   background-color: #8ddac8;
   -webkit-box-shadow: 0 0 4px 2px #bbbbbb;
@@ -398,31 +435,31 @@ body {
   -ms-box-shadow: 0 0 4px 2px #bbbbbb;
   -o-box-shadow: 0 0 4px 2px #bbbbbb;
   box-shadow: 0 0 4px 2px #bbbbbb; }
-  .content .post:hover .post-image {
+  .home-template .content .post:hover .post-image {
     background-size: 105%; }
-  .content .post:hover .post-title a {
+  .home-template .content .post:hover .post-title a {
     color: #FFF; }
-  .content .post:hover .read-more, .content .post:hover p {
+  .home-template .content .post:hover .read-more, .home-template .content .post:hover p {
     color: #FFF; }
-  .content .post:hover .post-date {
+  .home-template .content .post:hover .post-date {
     color: #FFF; }
 
-.content .post-list-body {
+.home-template .content .post-list-body {
   padding: 20px; }
 
 .gutter-sizer {
   width: 5%; }
 
-.content .post-date {
+.home-template .content .post-date {
   padding: 0 0 20px 20px;
   font-family: talldark;
   font-size: 1.44em;
   display: block; }
 
-.tag-video .video-container {
+.home-template .tag-video .video-container {
   width: 100%;
   height: 300px; }
-  .tag-video .video-container iframe {
+  .home-template .tag-video .video-container iframe {
     width: 100%;
     height: 100%; }
 
@@ -595,5 +632,46 @@ body {
   height: 5em; }
   .main-footer .logo {
     height: 4em; }
+
+.post-template .main-header .separator {
+  left: 4%;
+  width: 96%;
+  height: 4px;
+  position: fixed;
+  top: 50px;
+  background-color: #ffb7ae; }
+
+.post-template .post-navegation {
+  left: 4%;
+  width: 96%;
+  height: 2em;
+  position: fixed;
+  top: 54px;
+  -webkit-box-shadow: 0px 10px 10px -7px #464441;
+  -moz-box-shadow: 0px 10px 10px -7px #464441;
+  -ms-box-shadow: 0px 10px 10px -7px #464441;
+  -o-box-shadow: 0px 10px 10px -7px #464441;
+  box-shadow: 0px 10px 10px -7px #464441; }
+  .post-template .post-navegation .btn {
+    float: left;
+    cursor: pointer;
+    background-color: #FFF;
+    color: #615d59;
+    height: 100%;
+    width: 50%;
+    -webkit-transition: background-color .2s linear;
+    -moz-transition: background-color .2s linear;
+    -ms-transition: background-color .2s linear;
+    -o-transition: background-color .2s linear;
+    transition: background-color .2s linear;
+    position: relative; }
+  .post-template .post-navegation .btn:hover {
+    background-color: #615d59;
+    color: #FFF; }
+  .post-template .post-navegation .btn-null {
+    width: 50%;
+    background-color: #FFF;
+    float: left;
+    height: 100%; }
 
 /*# sourceMappingURL=style.css.map */

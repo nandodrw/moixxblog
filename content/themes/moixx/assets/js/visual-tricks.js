@@ -70,7 +70,7 @@
 
   });
 
-  $('.post').click(function(){
+  $('.home-template .post').click(function(){
     w.location.href = this.dataset.url;
   });
 
