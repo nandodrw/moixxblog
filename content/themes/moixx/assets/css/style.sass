@@ -207,6 +207,8 @@ body
   float: left
   @include prefix(box-shadow, "0 0 0 0 " +  darken($gris, 15%))
   @include double-prefix-transition(box-shadow, "0.1s linear")
+  p
+    font-size: 1.44em
   @media screen and (max-width: 1200px)
     width: 47.5%
 
@@ -383,7 +385,29 @@ body
 
 .pagination
   width: 100%
-  background-color: red
+  height: 2em
+  .btn
+    width: 33.33%
+    float: left
+    cursor: pointer
+    background-color: $blanco
+    color: $black-pantone
+    height: 100%
+    @include prefix(transition, "background-color .2s linear")
+    position: relative
+  .btn-null
+    width: 33.33%
+    float: left
+    height: 100%
+  .btn:hover
+    background-color: $black-pantone
+    color: $blanco
+  .page-number
+    width: 33.33%
+    float: left
+    height: 100%
+    position: relative
+
 
 // ********************************************
 // ****************** footer ******************
@@ -391,7 +415,7 @@ body
 
 .main-footer
   width: 100%
-  background-color: $negro
+  background-color: darken($green-pantone, 20%)
   position: relative
   height: 5em
   .logo

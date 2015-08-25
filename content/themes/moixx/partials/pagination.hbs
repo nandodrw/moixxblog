@@ -1,0 +1,21 @@
+
+
+<nav class="pagination margin-top" role="navigation">
+
+    {{#if prev}}
+        <div class="btn" data-link="{{page_url prev}}">
+          <span class="center-axis">&larr; At&#237;culos recientes</span>
+        </div>
+    {{else}}
+        <div class="btn-null"></div>
+    {{/if}}
+    <div class="page-number"> <span class="center-axis">P&#225;gina {{page}} de {{pages}}</span></div>
+    {{#if next}}
+        <div class="btn" data-link="{{page_url next}}">
+          <span class="center-axis">At&#237;culos anteriores &rarr;</span>
+        </div>
+    {{else}}
+        <div class="btn-null"></div>
+    {{/if}}
+</nav>
+

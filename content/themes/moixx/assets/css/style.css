@@ -73,6 +73,9 @@ a {
 .margin-bottom-1 {
   margin-bottom: 1.414em; }
 
+.margin-top {
+  margin-top: 2.074em; }
+
 .border-box {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -362,6 +365,8 @@ body {
   -ms-transition: -ms-box-shadow 0.1s linear;
   -o-transition: -o-box-shadow 0.1s linear;
   transition: box-shadow 0.1s linear; }
+  .content .post p {
+    font-size: 1.44em; }
   @media screen and (max-width: 1200px) {
     .content .post {
       width: 47.5%; } }
@@ -556,11 +561,36 @@ body {
 
 .pagination {
   width: 100%;
-  background-color: red; }
+  height: 2em; }
+  .pagination .btn {
+    width: 33.33%;
+    float: left;
+    cursor: pointer;
+    background-color: #FFF;
+    color: #615d59;
+    height: 100%;
+    -webkit-transition: background-color .2s linear;
+    -moz-transition: background-color .2s linear;
+    -ms-transition: background-color .2s linear;
+    -o-transition: background-color .2s linear;
+    transition: background-color .2s linear;
+    position: relative; }
+  .pagination .btn-null {
+    width: 33.33%;
+    float: left;
+    height: 100%; }
+  .pagination .btn:hover {
+    background-color: #615d59;
+    color: #FFF; }
+  .pagination .page-number {
+    width: 33.33%;
+    float: left;
+    height: 100%;
+    position: relative; }
 
 .main-footer {
   width: 100%;
-  background-color: #000;
+  background-color: #6ed0b9;
   position: relative;
   height: 5em; }
   .main-footer .logo {
