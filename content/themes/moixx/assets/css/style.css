@@ -367,16 +367,16 @@ body {
   .nav-link:hover .label-link {
     color: #FAAB46; }
 
-.home-template .site-wrapper, .post-template .site-wrapper {
+.home-template .site-wrapper, .post-template .site-wrapper, .paged .site-wrapper {
   width: 96%;
   margin-left: 4%; }
 
-.home-template .content {
+.home-template .content, .paged .content {
   width: 1200px;
   max-width: 100%;
   margin: 4.5rem auto 0 auto; }
   @media screen and (max-width: 1200px) {
-    .home-template .content {
+    .home-template .content, .paged .content {
       width: 95%; } }
 
 .post-template .content {
@@ -387,7 +387,7 @@ body {
     .post-template .content {
       width: 90%; } }
 
-.home-template .content .post {
+.home-template .content .post, .paged .content .post {
   width: 30%;
   background-color: #FFF;
   border-radius: 0.2em;
@@ -402,20 +402,20 @@ body {
   -ms-transition: -ms-box-shadow 0.1s linear;
   -o-transition: -o-box-shadow 0.1s linear;
   transition: box-shadow 0.1s linear; }
-  .home-template .content .post p {
+  .home-template .content .post p, .paged .content .post p {
     font-size: 1.44em; }
   @media screen and (max-width: 1200px) {
-    .home-template .content .post {
+    .home-template .content .post, .paged .content .post {
       width: 47.5%; } }
 
-.home-template .content .post .post-title a {
+.home-template .content .post .post-title a, .paged .content .post .post-title a {
   font-family: bg-medium;
   color: #000; }
 
-.home-template .content .post .post-title a:active {
+.home-template .content .post .post-title a:active, .paged .content .post .post-title a:active {
   color: #FFF; }
 
-.home-template .content .post-image {
+.home-template .content .post-image, .paged .content .post-image {
   width: 100%;
   height: 300px;
   background-size: 100%;
@@ -427,7 +427,7 @@ body {
   transition: background-size 0.4s;
   background-position: 50% 0; }
 
-.home-template .content .post:hover {
+.home-template .content .post:hover, .paged .content .post:hover {
   cursor: pointer;
   opacity: 0.4;
   -webkit-box-shadow: 0 0 4px 2px #bbbbbb;
@@ -435,25 +435,25 @@ body {
   -ms-box-shadow: 0 0 4px 2px #bbbbbb;
   -o-box-shadow: 0 0 4px 2px #bbbbbb;
   box-shadow: 0 0 4px 2px #bbbbbb; }
-  .home-template .content .post:hover .post-image {
+  .home-template .content .post:hover .post-image, .paged .content .post:hover .post-image {
     background-size: 105%; }
 
-.home-template .content .post-list-body {
+.home-template .content .post-list-body, .paged .content .post-list-body {
   padding: 20px; }
 
 .gutter-sizer {
   width: 5%; }
 
-.home-template .content .post-date {
+.home-template .content .post-date, .paged .content .post-date {
   padding: 0 0 20px 20px;
   font-family: talldark;
   font-size: 1.44em;
   display: block; }
 
-.home-template .tag-video .video-container {
+.home-template .tag-video .video-container, .paged .tag-video .video-container {
   width: 100%;
   height: 300px; }
-  .home-template .tag-video .video-container iframe {
+  .home-template .tag-video .video-container iframe, .paged .tag-video .video-container iframe {
     width: 100%;
     height: 100%; }
 
