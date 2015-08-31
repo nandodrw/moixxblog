@@ -254,6 +254,8 @@ body
     p
       font-size: 1.44em
       color: $negro
+      overflow: hidden
+      text-overflow: ellipsis
     @media screen and (max-width: 1200px)
       width: 47.5%
 
@@ -298,6 +300,12 @@ body
     font-family: talldark
     font-size: 1.44em
     display: block
+    float: left
+    color: $negro
+  .content .icon
+    height: 1em
+    float: left
+    margin: 0.5em
 
 .home-template, .paged, .tag-template
   .tag-video .video-container
