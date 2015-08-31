@@ -253,6 +253,7 @@ body
     @include double-prefix-transition(box-shadow, "0.1s linear")
     p
       font-size: 1.44em
+      color: $negro
     @media screen and (max-width: 1200px)
       width: 47.5%
 
@@ -277,8 +278,8 @@ body
 .home-template, .paged, .tag-template
   .content .post:hover
     cursor: pointer
-    opacity: 0.4
-    @include prefix(box-shadow, "0 0 4px 2px " + darken($gris, 20%))
+    opacity: 0.8
+    @include prefix(box-shadow, "0 0 10px 4px " + darken($gris, 20%))
     .post-image
       background-size: 105%
 
@@ -362,6 +363,7 @@ body
       float: right
       height: 100%
       width: 100%
+      cursor: pointer
       background-size: 50px auto
       background-repeat: no-repeat
       background-position: center

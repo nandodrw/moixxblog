@@ -403,7 +403,8 @@ body {
   -o-transition: -o-box-shadow 0.1s linear;
   transition: box-shadow 0.1s linear; }
   .home-template .content .post p, .paged .content .post p, .tag-template .content .post p {
-    font-size: 1.44em; }
+    font-size: 1.44em;
+    color: #000; }
   @media screen and (max-width: 1200px) {
     .home-template .content .post, .paged .content .post, .tag-template .content .post {
       width: 47.5%; } }
@@ -429,12 +430,12 @@ body {
 
 .home-template .content .post:hover, .paged .content .post:hover, .tag-template .content .post:hover {
   cursor: pointer;
-  opacity: 0.4;
-  -webkit-box-shadow: 0 0 4px 2px #bbbbbb;
-  -moz-box-shadow: 0 0 4px 2px #bbbbbb;
-  -ms-box-shadow: 0 0 4px 2px #bbbbbb;
-  -o-box-shadow: 0 0 4px 2px #bbbbbb;
-  box-shadow: 0 0 4px 2px #bbbbbb; }
+  opacity: 0.8;
+  -webkit-box-shadow: 0 0 10px 4px #bbbbbb;
+  -moz-box-shadow: 0 0 10px 4px #bbbbbb;
+  -ms-box-shadow: 0 0 10px 4px #bbbbbb;
+  -o-box-shadow: 0 0 10px 4px #bbbbbb;
+  box-shadow: 0 0 10px 4px #bbbbbb; }
   .home-template .content .post:hover .post-image, .paged .content .post:hover .post-image, .tag-template .content .post:hover .post-image {
     background-size: 105%; }
 
@@ -529,6 +530,7 @@ body {
       float: right;
       height: 100%;
       width: 100%;
+      cursor: pointer;
       background-size: 50px auto;
       background-repeat: no-repeat;
       background-position: center;
