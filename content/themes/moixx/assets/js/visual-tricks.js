@@ -5,7 +5,7 @@
   var setTop = true;
 
   function getNavBarTranslation(){
-    var topDistance = 500;
+    var topDistance = 400;
     topDistance = topDistance - w.scrollY;
     if (topDistance < 0) {
       topDistance = 0;
@@ -44,7 +44,7 @@
 
     if(checkLocationPostList()){
 
-      if(w.scrollY >= 450) {
+      if(w.scrollY >= 350) {
 
           setTopNavbarStyle();
 

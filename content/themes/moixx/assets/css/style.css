@@ -185,7 +185,7 @@ body {
 
 .main-nav {
   position: absolute;
-  top: 450px;
+  top: 350px;
   -webkit-box-shadow: 0px 10px 10px -7px #464441;
   -moz-box-shadow: 0px 10px 10px -7px #464441;
   -ms-box-shadow: 0px 10px 10px -7px #464441;
@@ -208,7 +208,7 @@ body {
 .top-image-background {
   background-image: url(../images/head.jpg);
   background-size: cover;
-  height: 500px;
+  height: 400px;
   width: 100%;
   position: relative; }
   .top-image-background .cover {
@@ -368,8 +368,8 @@ body {
     color: #FAAB46; }
 
 .home-template .site-wrapper, .post-template .site-wrapper, .paged .site-wrapper {
-  width: 96%;
-  margin-left: 4%; }
+  width: 92%;
+  margin-left: 8%; }
 
 .home-template .content, .paged .content {
   width: 1200px;
@@ -463,27 +463,16 @@ body {
   bottom: 0;
   left: 0;
   z-index: 20;
-  -webkit-transform: translate3d(-66.66%, 0, 0);
-  -moz-transform: translate3d(-66.66%, 0, 0);
-  -ms-transform: translate3d(-66.66%, 0, 0);
-  -o-transform: translate3d(-66.66%, 0, 0);
-  transform: translate3d(-66.66%, 0, 0);
-  -webkit-transition: -webkit-transform 0.3s cubic-bezier(.62,.02,.6,.3) 0s;
-  -moz-transition: -moz-transform 0.3s cubic-bezier(.62,.02,.6,.3) 0s;
-  -ms-transition: -ms-transform 0.3s cubic-bezier(.62,.02,.6,.3) 0s;
-  -o-transition: -o-transform 0.3s cubic-bezier(.62,.02,.6,.3) 0s;
-  transition: transform 0.3s cubic-bezier(.62,.02,.6,.3) 0s;
   height: 100%;
-  width: 12.1%;
+  width: 8%;
   background-color: #000;
   overflow-y: scroll;
   float: left; }
   .left-nav .nav-buttons {
     height: 100%; }
-  .left-nav .btn {
-    height: 13.33%;
-    min-height: 100px;
-    width: 100%;
+  .left-nav .category-link-list .btn {
+    width: 90%;
+    padding: 0.25em 0 0.25em 0.5em;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -495,8 +484,14 @@ body {
     -ms-transition: background-color 0.2s;
     -o-transition: background-color 0.2s;
     transition: background-color 0.2s;
-    position: relative;
     cursor: pointer; }
+  .left-nav .category-link-list .btn a {
+    color: #FFF; }
+  .left-nav .category-link-list .btn:hover {
+    color: #000;
+    background-color: #bbe9de; }
+  .left-nav .category-link-list .btn:hover a {
+    color: #615d59; }
   .left-nav .logo-btn {
     height: 20%;
     min-height: 100px;
@@ -509,51 +504,11 @@ body {
     .left-nav .logo-btn .logo-holder {
       float: right;
       height: 100%;
-      width: 30%;
-      background-size: 85%;
+      width: 100%;
+      background-size: 50px auto;
       background-repeat: no-repeat;
       background-position: center;
       background-image: url(../images/isotipo.png); }
-
-.left-nav .btn a {
-  display: block;
-  height: 100%;
-  width: 100%; }
-
-.left-nav:hover {
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  -o-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0); }
-  .left-nav:hover .logo-btn .logo-holder {
-    width: 100%;
-    background-image: url(../images/btn-logo.png);
-    background-size: auto 90%; }
-
-.left-nav .nav-buttons .tag {
-  text-align: left;
-  overflow: hidden;
-  color: #FFF;
-  width: 70%;
-  position: absolute;
-  left: 1.5%;
-  top: 50%; }
-.left-nav .nav-buttons .button-holder {
-  width: 30%;
-  height: 100%;
-  right: 1.5%;
-  position: relative;
-  float: right; }
-  .left-nav .nav-buttons .button-holder .icon-holder {
-    width: 100%;
-    max-width: 90%;
-    max-height: 80%;
-    min-height: 40px;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: absolute; }
 
 .left-nav .nav-buttons .logo {
   width: 100%;
@@ -562,20 +517,18 @@ body {
   background-position: center;
   background-repeat: no-repeat; }
 
-.left-nav .nav-buttons .btn:hover {
-  background-color: #FAAB46; }
-  .left-nav .nav-buttons .btn:hover .button-holder .icon-holder.beauthy {
-    background-image: url(../images/belleza.png); }
-  .left-nav .nav-buttons .btn:hover .button-holder .icon-holder.goodnes {
-    background-image: url(../images/salud.png); }
-  .left-nav .nav-buttons .btn:hover .button-holder .icon-holder.deco {
-    background-image: url(../images/deco.png); }
-  .left-nav .nav-buttons .btn:hover .button-holder .icon-holder.tv {
-    background-image: url(../images/tv.png); }
-  .left-nav .nav-buttons .btn:hover .button-holder .icon-holder.destiny {
-    background-image: url(../images/destinos.png); }
-  .left-nav .nav-buttons .btn:hover .button-holder .icon-holder.fashion {
-    background-image: url(../images/moda.png); }
+.left-nav .nav-buttons .btn:hover .button-holder .icon-holder.beauthy {
+  background-image: url(../images/belleza.png); }
+.left-nav .nav-buttons .btn:hover .button-holder .icon-holder.goodnes {
+  background-image: url(../images/salud.png); }
+.left-nav .nav-buttons .btn:hover .button-holder .icon-holder.deco {
+  background-image: url(../images/deco.png); }
+.left-nav .nav-buttons .btn:hover .button-holder .icon-holder.tv {
+  background-image: url(../images/tv.png); }
+.left-nav .nav-buttons .btn:hover .button-holder .icon-holder.destiny {
+  background-image: url(../images/destinos.png); }
+.left-nav .nav-buttons .btn:hover .button-holder .icon-holder.fashion {
+  background-image: url(../images/moda.png); }
 
 .left-nav .nav-controller {
   float: left;
@@ -597,8 +550,8 @@ body {
     width: 50%;
     float: left;
     cursor: pointer;
-    background-color: #FFF;
-    color: #615d59;
+    background-color: #000;
+    color: #FFF;
     height: 100%;
     -webkit-transition: background-color .2s linear;
     -moz-transition: background-color .2s linear;
@@ -613,7 +566,7 @@ body {
     background-color: #FFF; }
   .pagination .btn:hover {
     background-color: #615d59;
-    color: #FFF; }
+    color: #bbe9de; }
   .pagination .page-number {
     width: 50%;
     float: left;
