@@ -24,7 +24,6 @@
 
 <body class="{{body_class}} nav-closed">
 
-    <!-- {{navigation}} -->
 
     <nav class='left-nav'>
       <ul class="nav-buttons">
@@ -34,33 +33,27 @@
         </ol>
         <ol>
             <ul class="category-link-list">
-                <ol class="btn"><a href="/belleza">Belleza</a></ol>
-                <ol class="btn"><a href="/bienestar">Bienestar</a></ol>
-                <ol class="btn"><a href="/deco">Decoraci&#243;n</a></ol>
-                <ol class="btn"><a href="/tv">MOIXX.TV</a></ol>
-                <ol class="btn"><a href="/destinos">Destinos</a></ol>
-                <ol class="btn"><a href="/moda">Moda</a></ol>
+                <ol class="btn" data-ref="belleza"><a href="/belleza">Belleza</a></ol>
+                <ol class="btn" data-ref="bienestar"><a href="/bienestar">Bienestar</a></ol>
+                <ol class="btn" data-ref="deco"><a href="/deco">Decoraci&#243;n</a></ol>
+                <ol class="btn" data-ref="tv"><a href="/tv">MOIXX.TV</a></ol>
+                <ol class="btn" data-ref="destinos"><a href="/destinos">Destinos</a></ol>
+                <ol class="btn" data-ref="moda"><a href="/moda">Moda</a></ol>
             </ul>
         </ol>
         <ol>
-            <ul class="btn" data-link='/belleza'>
-                <ol>
-                    <div class="icon-holder center-axis" style="background-image : url({{asset "images/belleza-hover.png"}})"></div>
+            <ul class="thumb-category-list">
+                <ol class="thumb belleza" style="background-image : url({{asset "images/belleza-hover.png"}})">
                 </ol>
-                <ol>
-                   <div class="icon-holder center-axis" style="background-image : url({{asset "images/salud-hover.png"}})"></div>
+                <ol class="thumb smaller bienestar" style="background-image : url({{asset "images/salud-hover.png"}})">
                 </ol>
-                <ol>
-                    <div class="icon-holder center-axis" style="background-image : url({{asset "images/deco-hover.png"}})"></div>
+                <ol class="thumb deco" style="background-image : url({{asset "images/deco-hover.png"}})">
                 </ol>
-                <ol>
-                    <div class="icon-holder center-axis" style="background-image : url({{asset "images/tv-hover.png"}})"></div>
+                <ol class="thumb tv" style="background-image : url({{asset "images/tv-hover.png"}})">
                 </ol>
-                <ol>
-                    <div class="icon-holder center-axis" style="background-image : url({{asset "images/destinos-hover.png"}})"></div>
+                <ol class="thumb smaller destinos" style="background-image : url({{asset "images/destinos-hover.png"}})">
                 </ol>
-                <ol>
-                    <div class="icon-holder center-axis" style="background-image : url({{asset "images/moda-hover.png"}})"></div>
+                <ol class="thumb smaller moda" style="background-image : url({{asset "images/moda-hover.png"}})">
                 </ol>
             </ul>
         </ol>

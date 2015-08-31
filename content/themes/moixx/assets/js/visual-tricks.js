@@ -79,5 +79,11 @@
     w.location.href = this.dataset.link;
   });
 
+  $(".category-link-list .btn").hover(function(){
+    $('.thumb-category-list .thumb.' + this.dataset.ref).css("opacity", 1);
+  },function(){
+    $('.thumb-category-list .thumb.' + this.dataset.ref).css("opacity", "");
+  });
+
 
 })(window, document, jQuery);

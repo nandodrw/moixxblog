@@ -492,6 +492,30 @@ body {
     background-color: #bbe9de; }
   .left-nav .category-link-list .btn:hover a {
     color: #615d59; }
+  .left-nav .thumb-category-list {
+    position: relative; }
+  .left-nav .thumb-category-list .thumb {
+    position: absolute;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 1em 0.5em;
+    height: 5em;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    -webkit-transition: opacity 0.15s;
+    -moz-transition: opacity 0.15s;
+    -ms-transition: opacity 0.15s;
+    -o-transition: opacity 0.15s;
+    transition: opacity 0.15s;
+    opacity: 0; }
+  .left-nav .thumb-category-list .thumb.smaller {
+    background-size: 50% auto; }
   .left-nav .logo-btn {
     height: 20%;
     min-height: 100px;
@@ -509,39 +533,6 @@ body {
       background-repeat: no-repeat;
       background-position: center;
       background-image: url(../images/isotipo.png); }
-
-.left-nav .nav-buttons .logo {
-  width: 100%;
-  height: 100%;
-  background-size: 90%;
-  background-position: center;
-  background-repeat: no-repeat; }
-
-.left-nav .nav-buttons .btn:hover .button-holder .icon-holder.beauthy {
-  background-image: url(../images/belleza.png); }
-.left-nav .nav-buttons .btn:hover .button-holder .icon-holder.goodnes {
-  background-image: url(../images/salud.png); }
-.left-nav .nav-buttons .btn:hover .button-holder .icon-holder.deco {
-  background-image: url(../images/deco.png); }
-.left-nav .nav-buttons .btn:hover .button-holder .icon-holder.tv {
-  background-image: url(../images/tv.png); }
-.left-nav .nav-buttons .btn:hover .button-holder .icon-holder.destiny {
-  background-image: url(../images/destinos.png); }
-.left-nav .nav-buttons .btn:hover .button-holder .icon-holder.fashion {
-  background-image: url(../images/moda.png); }
-
-.left-nav .nav-controller {
-  float: left;
-  width: 4em;
-  height: 5em;
-  background-color: #000;
-  position: relative;
-  top: 45%;
-  border-top-right-radius: 0.25em;
-  border-bottom-right-radius: 0.25em;
-  background-size: 70%;
-  background-position: center;
-  background-repeat: no-repeat; }
 
 .pagination {
   width: 100%;
