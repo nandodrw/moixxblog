@@ -82,5 +82,17 @@
     $('.thumb-category-list .thumb.' + this.dataset.ref).css("opacity", "");
   });
 
+  $(".share-buttom .share").hover(function(){
+    $('.share-buttom').css("background-image", "url(/assets/images/social-buttom-share.png)");
+  },function(){
+    $('.share-buttom').css("background-image", "");
+  });
+
+  $(".share-buttom .like").hover(function(){
+    $('.share-buttom').css("background-image", "url(/assets/images/social-buttom-like.png)");
+  },function(){
+    $('.share-buttom').css("background-image", "");
+  });
+
 
 })(window, document, jQuery);
