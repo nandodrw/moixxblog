@@ -177,8 +177,8 @@ body {
 
 .main-nav, .main-post-nav {
   z-index: 10;
-  left: 4%;
-  width: 96%;
+  left: 8%;
+  width: 92%;
   height: 50px;
   -webkit-transition: background-color 0.4s, border-color 0.2s;
   -moz-transition: background-color 0.4s, border-color 0.2s;
@@ -382,12 +382,12 @@ body {
     .home-template .content, .paged .content, .tag-template .content, .author-template .content {
       width: 95%; } }
 
-.post-template .content {
-  width: 950px;
+.post-template .content, .post-template .comments-holder {
+  width: 750px;
   max-width: 100%;
   margin: 7.5rem auto 0 auto; }
   @media screen and (max-width: 1200px) {
-    .post-template .content {
+    .post-template .content, .post-template .comments-holder {
       width: 90%; } }
 
 .home-template .content .post, .paged .content .post, .tag-template .content .post, .author-template .content .post {
@@ -608,8 +608,8 @@ body {
     height: 4em; }
 
 .post-template .main-header .separator {
-  left: 4%;
-  width: 96%;
+  left: 8%;
+  width: 92%;
   height: 4px;
   position: fixed;
   top: 50px;
@@ -617,8 +617,8 @@ body {
   z-index: 10; }
 
 .post-template .post-navegation {
-  left: 4%;
-  width: 96%;
+  left: 8%;
+  width: 92%;
   height: 2em;
   position: fixed;
   top: 54px;
