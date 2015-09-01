@@ -38,6 +38,8 @@
 
     if(location.indexOf('tag/') == 1 ) return true;
 
+    if(location.indexOf('author/') == 1 ) return true;
+
     return false;
 
   }
@@ -73,7 +75,11 @@
   });
 
   $('.btn').click(function(){
-    w.location.href = this.dataset.link;
+    if(this.dataset.link) {
+      w.location.href = this.dataset.link;
+    } else if (this.dataset.url){
+      w.location.href = this.dataset.url;
+    }
   });
 
   $(".category-link-list .btn").hover(function(){
