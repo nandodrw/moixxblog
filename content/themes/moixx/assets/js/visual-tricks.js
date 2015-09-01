@@ -36,6 +36,8 @@
 
     if(location.indexOf('page/') == 1 ) return true;
 
+    if(location.indexOf('tag/') == 1 ) return true;
+
     return false;
 
   }
@@ -69,11 +71,6 @@
     });
 
   });
-
-  $('.home-template .post').click(function(){
-    w.location.href = this.dataset.url;
-  });
-
 
   $('.btn').click(function(){
     w.location.href = this.dataset.link;
