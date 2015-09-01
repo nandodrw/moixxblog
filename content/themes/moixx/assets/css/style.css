@@ -73,6 +73,9 @@ a {
 .margin-bottom-1 {
   margin-bottom: 1.414em; }
 
+.margin-bottom-2 {
+  margin-bottom: 0.833em; }
+
 .margin-top {
   margin-top: 2.074em; }
 
@@ -448,16 +451,16 @@ body {
   width: 5%; }
 
 .home-template .content .post-date, .paged .content .post-date, .tag-template .content .post-date {
-  padding: 0 0 20px 20px;
   font-family: talldark;
   font-size: 1.44em;
   display: block;
-  float: left;
+  float: right;
   color: #000; }
 .home-template .content .icon, .paged .content .icon, .tag-template .content .icon {
   height: 1em;
-  float: left;
-  margin: 0.5em; }
+  float: right;
+  margin: 0.5em;
+  padding: 0 20px 20px; }
 
 .home-template .tag-video .video-container, .paged .tag-video .video-container, .tag-template .tag-video .video-container {
   width: 100%;
@@ -465,6 +468,27 @@ body {
   .home-template .tag-video .video-container iframe, .paged .tag-video .video-container iframe, .tag-template .tag-video .video-container iframe {
     width: 100%;
     height: 100%; }
+
+.post-list-body .author-holder {
+  position: relative; }
+.post-list-body .author-img {
+  height: 2.5em;
+  max-width: 3em;
+  border-radius: 50%;
+  display: inline-block; }
+.post-list-body .author-name {
+  font-family: japo-subtract;
+  position: absolute;
+  margin-left: 0.5em;
+  top: 50%;
+  -webkit-transform: translate3d(0, -50%, 0);
+  -moz-transform: translate3d(0, -50%, 0);
+  -ms-transform: translate3d(0, -50%, 0);
+  -o-transform: translate3d(0, -50%, 0);
+  transform: translate3d(0, -50%, 0);
+  color: #000;
+  display: inline-block;
+  font-size: 0.833em; }
 
 .left-nav {
   position: fixed;

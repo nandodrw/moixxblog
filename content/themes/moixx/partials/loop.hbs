@@ -43,16 +43,23 @@
             {{/if}}
 
 
-
         </header>
         <section class="post-list-body border-box">
 
-            <h2 class="post-title margin-bottom-1"><a href="{{url}}">{{{title}}}</a></h2>
+            <h2 class="post-title margin-bottom-2"><a href="{{url}}">{{{title}}}</a></h2>
+
+            {{#author}}
+                <div class="author-holder margin-bottom-2">
+                    <img class="author-img" src="{{image}}" alt="">
+                    <h3 class="author-name">{{name}}</h3>
+                </div>
+            {{/author}}
 
             <p class="excerpt">{{excerpt words="26"}} <a class="read-more" href="{{url}}">&raquo;</a></p>
         </section>
         <footer class="post-meta">
-            <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time><img class='icon' src="{{asset "images/calendar.png"}}" alt="">
+            <img class='icon' src="{{asset "images/calendar.png"}}" alt="">
+            <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
         </footer>
     </article>
 
