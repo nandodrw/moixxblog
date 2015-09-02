@@ -670,8 +670,6 @@ body {
   background-color: #FFF;
   border-radius: 0.25em;
   padding: 1em;
-  overflow: hidden;
-  text-overflow: ellipsis;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -702,6 +700,10 @@ body {
     margin-bottom: 1.3em !important; }
   .post-template .post .post-content img {
     margin-bottom: none !important; }
+  .post-template .post p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%; }
 
 .share-buttom {
   height: 12em;

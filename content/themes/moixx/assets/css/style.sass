@@ -500,8 +500,6 @@ body
   background-color: $blanco
   border-radius: 0.25em
   padding: 1em
-  overflow: hidden
-  text-overflow: ellipsis
   @include prefix(box-sizing, border-box)
   margin-bottom: 2em
   .post-title
@@ -524,6 +522,10 @@ body
     margin-bottom: 1.3em !important
   .post-content img
     margin-bottom: none !important
+  p
+    overflow: hidden
+    text-overflow: ellipsis
+    max-width: 100%
 
 .share-buttom
   height: 12em
