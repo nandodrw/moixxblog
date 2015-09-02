@@ -121,7 +121,7 @@
                 {{#if bio}}
                     <p class="bio">{{bio}}</p>
                 {{else}}
-                    <p class="read-more">Lea <a href="{{url}}">m&#225;s</a> de este autor.</p>
+                    <!-- <p class="read-more">Lea <a href="{{url}}">m&#225;s</a> de este autor.</p> -->
                 {{/if}}
             </section>
 
@@ -129,8 +129,8 @@
 
             <section class="share">
                 <div class="share-buttom">
-                  <div class="like btn" data-link='https://www.facebook.com/liker/liker.php?u={{url absolute="true"}}'></div>
-                  <div class="share btn" data-link='https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}'></div>
+                  <div class="fb-like" data-href="{{url absolute="true"}}" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
+                  <div class="fb-share-button" data-href="{{url absolute="true"}}" data-layout="button"></div>
                 </div>
 
             </section>
