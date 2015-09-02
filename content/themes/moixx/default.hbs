@@ -24,6 +24,23 @@
 
 <body class="{{body_class}} nav-closed">
 
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '421398654719834',
+          xfbml      : true,
+          version    : 'v2.4'
+        });
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
 
     <nav class='left-nav'>
       <ul class="nav-buttons">
@@ -32,29 +49,29 @@
             <div class="logo-holder btn" data-link="/"></div>
         </ol>
         <ol>
-            <ul class="category-link-list">
-                <ol class="btn" data-link="/tag/belleza/" data-ref="belleza"><a>Belleza</a></ol>
-                <ol class="btn" data-link="/tag/bienestar/" data-ref="bienestar"><a>Bienestar</a></ol>
-                <ol class="btn" data-link="/tag/deco/" data-ref="deco"><a>Decoraci&#243;n</a></ol>
-                <ol class="btn" data-link="/tag/tv/" data-ref="tv"><a>MOIXX.TV</a></ol>
-                <ol class="btn" data-link="/tag/destinos/" data-ref="destinos"><a>Destinos</a></ol>
-                <ol class="btn" data-link="/tag/moda/" data-ref="moda"><a>Moda</a></ol>
-            </ul>
-        </ol>
-        <ol>
             <ul class="thumb-category-list">
-                <ol class="thumb belleza" style="background-image : url({{asset "images/belleza-hover.png"}})">
-                </ol>
-                <ol class="thumb smaller bienestar" style="background-image : url({{asset "images/salud-hover.png"}})">
-                </ol>
-                <ol class="thumb deco" style="background-image : url({{asset "images/deco-hover.png"}})">
+                <ol class="thumb smaller moda" style="background-image : url({{asset "images/moda-hover.png"}})">
                 </ol>
                 <ol class="thumb tv" style="background-image : url({{asset "images/tv-hover.png"}})">
                 </ol>
+                <ol class="thumb smaller bienestar" style="background-image : url({{asset "images/salud-hover.png"}})">
+                </ol>
+                <ol class="thumb belleza" style="background-image : url({{asset "images/belleza-hover.png"}})">
+                </ol>
+                <ol class="thumb deco" style="background-image : url({{asset "images/deco-hover.png"}})">
+                </ol>
                 <ol class="thumb smaller destinos" style="background-image : url({{asset "images/destinos-hover.png"}})">
                 </ol>
-                <ol class="thumb smaller moda" style="background-image : url({{asset "images/moda-hover.png"}})">
-                </ol>
+            </ul>
+        </ol>
+        <ol>
+            <ul class="category-link-list">
+                <ol class="btn" data-link="/tag/moda/" data-ref="moda"><a>Moda</a></ol>
+                <ol class="btn" data-link="/tag/tv/" data-ref="tv"><a>MOIXX.TV</a></ol>
+                <ol class="btn" data-link="/tag/bienestar/" data-ref="bienestar"><a>Bienestar</a></ol>
+                <ol class="btn" data-link="/tag/belleza/" data-ref="belleza"><a>Belleza</a></ol>
+                <ol class="btn" data-link="/tag/deco/" data-ref="deco"><a>Decoraci&#243;n</a></ol>
+                <ol class="btn" data-link="/tag/destinos/" data-ref="destinos"><a>Destinos</a></ol>
             </ul>
         </ol>
       </ul>
