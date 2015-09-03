@@ -17,10 +17,11 @@
                     {{#checkVideo tags}}
 
 
-                        <div class="video-container">
+                        <div class="video-container hide-mobile">
                             <iframe type="text/html" src="http://www.youtube.com/embed/{{videoUrl tags}}?autoplay=0&amp;modestbranding=1&amp;rel=0" frameborder="0"></iframe>
                         </div>
 
+                        <div class="post-image show-mobile" style="background-image : url({{image}})"></div>
 
                     {{else}}
 

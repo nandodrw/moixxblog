@@ -14,3 +14,11 @@
   @include prefix(transform, translate3d(-50%, -50%, 0))
 
 
+.hide-mobile
+  @media (max-width: $mobile-break)
+    display: none
+
+.show-mobile
+  display: none
+  @media (max-width: $mobile-break)
+    display: block

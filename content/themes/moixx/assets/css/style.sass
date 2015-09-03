@@ -8,26 +8,38 @@
 body
   background-color: $gris
 
+
+// ********************************************
+// *************** general ********************
+// ********************************************
+
+
+
 // ********************************************
 // *************** nav bar ********************
 // ********************************************
 
-.main-header
-  width: 100%
 
 // **********************
 // nav bar main container
+
 .main-nav, .main-post-nav
   z-index: 10
   left: 8%
   width: 92%
   height: 50px
   @include prefix(transition, "background-color 0.4s, border-color 0.2s")
+  @media (max-width: $mobile-break)
+    width: 100%
+    left: 0
+
 
 .main-nav
   position: absolute
   top: 350px
   @include prefix(box-shadow, 0px 10px 10px -7px darken($black-pantone, 10%))
+  @media (max-width: $mobile-break)
+    top: 0
 
 .main-post-nav
   background-color: $blanco
@@ -36,6 +48,10 @@ body
 
 .main-nav.floating
   background-color: transparent
+  @media (max-width: $mobile-break)
+    background-color: $green-pantone
+    position: fixed
+    top: 0
 
 .main-nav.top
   background-color: $green-pantone
@@ -53,6 +69,8 @@ body
     width: 100%
     height: 100%
     background-color: rgba(0, 0, 0, 0.20)
+  @media (max-width: $mobile-break)
+    display: none
 
 // **********************
 
@@ -219,6 +237,9 @@ body
   .site-wrapper
     width: 92%
     margin-left: 8%
+    @media (max-width: $mobile-break)
+      width: 100%
+      margin-left: 0
 
 .home-template, .paged, .tag-template, .author-template
   .content
@@ -227,6 +248,8 @@ body
     margin: 4.5rem auto 0 auto
     @media screen and (max-width: 1200px)
       width: 95%
+    @media (max-width: $mobile-break)
+      width: 100%
 
 .post-template .content, .post-template .comments-holder
   width: 750px
@@ -234,6 +257,8 @@ body
   margin: 7.5rem auto 0 auto
   @media screen and (max-width: 1200px)
     width: 90%
+  @media (max-width: $mobile-break)
+    max-width: 100%
 
 .post-template .comments-holder
   width: 750px
@@ -241,6 +266,8 @@ body
   margin: 2em auto 1em auto
   @media screen and (max-width: 1200px)
     width: 90%
+  @media (max-width: $mobile-break)
+    max-width: 100%
 
 // ********************************************
 // ************ post list styling *************
@@ -261,6 +288,8 @@ body
       text-overflow: ellipsis
     @media screen and (max-width: 1200px)
       width: 47.5%
+    @media (max-width: $mobile-break)
+      width: 100%
 
 .home-template, .paged, .tag-template, .author-template
   .content .post .post-title a
@@ -279,6 +308,12 @@ body
     background-repeat: no-repeat
     @include prefix(transition, "background-size 0.4s")
     background-position: 50% 0
+    @media (max-width: $mobile-break)
+      height: 250px
+      background-size: cover
+    @media (max-width: $mobile-sm-break)
+      height: 200px
+
 
 .home-template, .paged, .tag-template, .author-template
   .content .post:hover
@@ -287,15 +322,27 @@ body
     @include prefix(box-shadow, "0 0 10px 4px " + darken($gris, 20%))
     .post-image
       background-size: 105%
-
-
+    @media (max-width: $mobile-break)
+      cursor: pointer
+      opacity: 1
+      @include prefix(box-shadow, "none")
+      background-size: cover
+  .content .post:active
+    @media (max-width: $mobile-break)
+      opacity: 0.8
 
 .home-template, .paged, .tag-template, .author-template
   .content .post-list-body
     padding: 20px
+  @media (max-width: $mobile-break)
+    padding: 10px
+  @media (max-width: $mobile-sm-break)
+    padding: 5px
 
 .gutter-sizer
   width: 5%
+  @media (max-width: $mobile-break)
+    width: 0
 
 .home-template, .paged, .tag-template, .author-template
   .content .post-date
@@ -309,6 +356,8 @@ body
     float: left
     margin: 0.5em
     padding: 0 20px 20px
+    @media (max-width: $mobile-sm-break)
+      display: none
   .content .excerpt
     float: left
     width: 100%
@@ -328,6 +377,9 @@ body
     position: relative
     float: left
     width: 100%
+    max-width: 100%
+    @media (max-width: $mobile-sm-break)
+      display: none
   .author-img
     height: 2.5em
     max-width: 3em
@@ -343,6 +395,21 @@ body
     display: inline-block
     font-size: 0.833em
 
+.post-header, .post-list-body
+  @media (max-width: $mobile-break)
+    width: 50%
+    float: left
+    overflow: hidden
+
+.post-list-body
+  @media (max-width: $mobile-break)
+    height: 250px
+  @media (max-width: $mobile-sm-break)
+    height: 200px
+
+.excerpt
+  @media (max-width: $mobile-break)
+    display: none
 
 // ********************************************
 // **************** left nav ******************
@@ -409,6 +476,9 @@ body
       background-position: center
       background-image: url(../images/isotipo.png)
 
+.left-nav
+  @media (max-width: $mobile-break)
+    display: none
 
 // ********************************************
 // ************** pagination ******************
@@ -440,6 +510,18 @@ body
     height: 100%
     position: relative
 
+.pagination
+  @media (max-width: $mobile-break)
+    height: 10em
+    .btn
+      width: 100%
+      height: 50%
+    .btn:active
+      background-color: $black-pantone
+      color: $green-pantone
+    .btn-null
+      width: 100%
+      height: 50%
 
 // ********************************************
 // ****************** footer ******************
@@ -451,8 +533,14 @@ body
   border-top: 1px solid $black-pantone
   position: relative
   height: 5em
+  @media (max-width: $mobile-break)
+    width: 100%
+    margin-left: 0
+    height: 15em
   .logo
     height: 4em
+    @media (max-width: $mobile-break)
+      height: 15em
 
 
 // ********************************************
