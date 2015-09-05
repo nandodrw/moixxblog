@@ -252,22 +252,19 @@ body
       width: 100%
 
 .post-template .content, .post-template .comments-holder
-  width: 750px
-  max-width: 100%
-  margin: 7.5rem auto 0 auto
-  @media screen and (max-width: 1200px)
-    width: 90%
-  @media (max-width: $mobile-break)
-    max-width: 100%
+  width: 100%
 
-.post-template .comments-holder
-  width: 750px
+.middle-section-post
+  width: 50%
+  float: left
   max-width: 100%
-  margin: 2em auto 1em auto
+  margin: 7.5rem 0 2.5em 25%
   @media screen and (max-width: 1200px)
-    width: 90%
+    width: 70%
+    margin-left: 5%
   @media (max-width: $mobile-break)
-    max-width: 100%
+    width: 95%
+    margin-left: 2.5%
 
 // ********************************************
 // ************ post list styling *************
@@ -522,6 +519,7 @@ body
     .btn-null
       width: 100%
       height: 50%
+      display: none
 
 // ********************************************
 // ****************** footer ******************
@@ -542,6 +540,8 @@ body
     @media (max-width: $mobile-break)
       height: 15em
 
+.post-template .main-footer
+  float: left
 
 // ********************************************
 // ************** Post view  ******************
@@ -556,6 +556,9 @@ body
   top: 50px
   background-color: $green-pantone
   z-index: 10
+  @media (max-width: $mobile-break)
+    width: 100%
+    left: 0
 
 .post-template .post-navegation
   left: 8%
@@ -565,6 +568,10 @@ body
   top: 52px
   @include prefix(box-shadow, 0px 10px 10px -7px darken($black-pantone, 10%))
   z-index: 10
+  @media (max-width: $mobile-break)
+    width: 100%
+    left: 0
+    height: 2em
   .btn
     float: left
     cursor: pointer
@@ -574,6 +581,8 @@ body
     width: 50%
     @include prefix(transition, "background-color .2s linear")
     position: relative
+    @media (max-width: $mobile-break)
+      width: 100%
   .btn:hover
     background-color: $black-pantone
     color: $blanco
@@ -582,6 +591,8 @@ body
     background-color: $blanco
     float: left
     height: 100%
+    @media (max-width: $mobile-break)
+      display: none
 
 .post-template .post
   background-color: $blanco
@@ -668,6 +679,14 @@ body
 .post-navegation .center-axis
   font-size: 0.833em
 
+
+.general-aside-post-content
+  float: left
+  width: 25%
+  height: 300px
+  margin-top: 7.5rem
+  @media (max-width: $mobile-break)
+    display: none
 
 
 
