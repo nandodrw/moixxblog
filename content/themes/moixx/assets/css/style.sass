@@ -295,7 +295,7 @@ body
 
 .home-template, .paged, .tag-template, .author-template
   .content .post .post-title a:active
-  color: $blanco
+    color: $blanco
 
 .home-template, .paged, .tag-template, .author-template
   .content .post-image
@@ -343,16 +343,18 @@ body
 
 .home-template, .paged, .tag-template, .author-template
   .content .post-date
-    font-family: talldark
-    font-size: 1.44em
+    font-family: bg-reg
+    font-size: 1.2em
     display: block
     float: left
     color: $negro
+    @media (max-width: $mobile-sm-break)
+      font-family: talldark
   .content .icon
     height: 1em
     float: left
-    margin: 0.5em
-    padding: 0 20px 20px
+    margin: 0.35em
+    padding: 0 6px 20px
     @media (max-width: $mobile-sm-break)
       display: none
   .content .excerpt
@@ -678,23 +680,51 @@ body
 .post-navegation .center-axis
   font-size: 0.833em
 
+.post-go-up
+  position: fixed
+  top: 6em
+  right: 0
+  .regular, .hover
+    width: 2em
+  .hover
+    opacity: 0
+
+.post-go-up
+  position: fixed
+  top: 6em
+  right: 1em
+  cursor: pointer
+  .regular, .hover
+    width: 3em
+    @include prefix(transition, "opacity 0.2s")
+    position: absolute
+    right: 0
+  .hover
+    opacity: 0
+
+.post-go-up:hover
+  .regular
+    opacity: 0
+  .hover
+    opacity: 1
+
+
+// ********************************************
+// ************ Aside styling  ****************
+// ********************************************
+
 
 .general-aside-post-content
   float: left
   width: 25%
-  height: 300px
   margin-top: 7.5rem
+  padding: 700px 0.5em 0 0.5em
+  @include prefix(box-sizing, border-box)
   @media (max-width: $mobile-break)
     display: none
-
-
-
-
-
-
-
-
-
+  .banner
+    width: 100%
+    margin-bottom: 10em
 
 
 
