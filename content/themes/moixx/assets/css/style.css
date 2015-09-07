@@ -414,7 +414,8 @@ body {
       width: 100%; } }
 
 .post-template .content, .post-template .comments-holder {
-  width: 100%; }
+  width: 100%;
+  margin-top: 8em; }
 
 .middle-section-post {
   width: 50%;
@@ -729,17 +730,14 @@ body {
   margin-left: 8%;
   border-top: 1px solid #615d59;
   position: relative;
-  height: 5em; }
+  height: 16em; }
   @media (max-width: 950px) {
     .main-footer {
       width: 100%;
       margin-left: 0;
       height: 15em; } }
   .main-footer .logo {
-    height: 4em; }
-    @media (max-width: 950px) {
-      .main-footer .logo {
-        height: 15em; } }
+    height: 15em; }
 
 .post-template .main-footer {
   float: left; }
@@ -848,6 +846,7 @@ body {
   background-repeat: no-repeat;
   position: relative;
   left: 50%;
+  margin-bottom: 4em;
   -webkit-transform: translate3d(-50%, 0, 0);
   -moz-transform: translate3d(-50%, 0, 0);
   -ms-transform: translate3d(-50%, 0, 0);
