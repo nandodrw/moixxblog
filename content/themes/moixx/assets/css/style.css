@@ -633,6 +633,7 @@ body {
   .left-nav .category-link-list .btn:hover a {
     color: #615d59; }
   .left-nav .thumb-category-list {
+    margin-top: 20%;
     position: relative; }
   .left-nav .thumb-category-list .thumb {
     position: absolute;
