@@ -588,6 +588,12 @@ body {
   .excerpt {
     display: none; } }
 
+@media (max-width: 950px) {
+  .home-template .post-header, .post-list-body {
+    width: 50%;
+    float: left;
+    overflow: hidden; } }
+
 .left-nav {
   position: fixed;
   top: 0;
@@ -919,6 +925,12 @@ body {
   opacity: 0; }
 .post-go-up:hover .hover {
   opacity: 1; }
+
+.post-template .content a {
+  color: #ffb7ae; }
+
+.post-template .content a:hover {
+  color: #bbe9de; }
 
 .general-aside-post-content {
   float: left;

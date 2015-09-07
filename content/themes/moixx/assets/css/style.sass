@@ -404,6 +404,12 @@ body
   @media (max-width: $mobile-break)
     display: none
 
+.home-template .post-header, .post-list-body
+  @media (max-width: $mobile-break)
+    width: 50%
+    float: left
+    overflow: hidden
+
 // ********************************************
 // **************** left nav ******************
 // ********************************************
@@ -701,6 +707,12 @@ body
     opacity: 0
   .hover
     opacity: 1
+
+.post-template .content a
+  color: $pink-pantone
+
+.post-template .content a:hover
+  color: $green-pantone
 
 
 // ********************************************
