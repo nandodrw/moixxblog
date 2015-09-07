@@ -413,7 +413,10 @@ body {
     .home-template .content, .paged .content, .tag-template .content, .author-template .content {
       width: 100%; } }
 
-.post-template .content, .post-template .comments-holder {
+.post-template .content {
+  width: 100%; }
+
+.post-template .comments-holder {
   width: 100%;
   margin-top: 8em; }
 
