@@ -104,6 +104,19 @@
               <section class="post-meta">
                   <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
               </section>
+
+              <section class="author">
+                  <div class="author-holder margin-bottom-2">
+                      <img class="author-img" src="{{image}}" alt="">
+                      <h3 class="author-name">{{name}}</h3>
+                  </div>
+                  {{#if bio}}
+                      <p class="bio">{{bio}}</p>
+                  {{else}}
+                      <!-- <p class="read-more">Lea <a href="{{url}}">m&#225;s</a> de este autor.</p> -->
+                  {{/if}}
+              </section>
+
           </header>
 
           <section class="post-content">
@@ -167,10 +180,20 @@
 
 <aside class="general-aside-post-content">
 
-  <img src="{{asset "images/banner-1.jpeg"}}" alt="" class="banner">
+  <div class="division-line"></div>
+
+  <img src="{{asset "images/side-banner-1.png"}}" alt="" class="banner">
+
   <div class="aside-embed-instagram"></div>
-  <img src="{{asset "images/banner-2.jpeg"}}" alt="" class="banner">
-  <div id="featured-posts-container"></div>
+
+  <div class="division-line"></div>
+
+  <h3 class="aside-tittle">Instagram</h3>
+
+  <script src="//instansive.com/widget/js/instansive.js"></script><iframe src="//instansive.com/widgets/4f721fb2f34ba4c5b3ac9a93daf901c39096ceff.html" id="instansive_4f721fb2f3" name="instansive_4f721fb2f3"  scrolling="no" allowtransparency="true" class="instansive-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
+
+
+
 
 </aside>
 
