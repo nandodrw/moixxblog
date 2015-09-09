@@ -262,7 +262,7 @@ body
   width: 50%
   float: left
   max-width: 100%
-  margin: 7.5rem 0 2.5em 25%
+  margin: 7.5rem 0 2.5em 12.5%
   @media screen and (max-width: 1200px)
     width: 70%
     margin: 7.5rem 0 2.5em 5%
@@ -481,6 +481,18 @@ body
       background-repeat: no-repeat
       background-position: center
       background-image: url(../images/isotipo.png)
+  .subscibe-link
+    position: absolute
+    bottom: 2.5em
+    text-align: center
+    width: 100%
+    cursor: pointer
+    padding: 0.5em 0
+    .caption
+      color: $blanco
+      font-size: 1em
+  .subscibe-link:hover
+    background-color: $pink-pantone
 
 .left-nav
   @media (max-width: $mobile-break)
@@ -770,10 +782,14 @@ body
     font-size: 0.9rem
     float: left
     margin-bottom: 1em
+    border-top-left-radius: 0.2em
+    border-bottom-left-radius: 0.2em
   .sub-btn
+    border-top-right-radius: 0.2em
+    border-bottom-right-radius: 0.2em
     float: left
     width: 20%
-    height: 2.3rem
+    height: 3.1rem
     background-color: $black-pantone
     margin-bottom: 1em
     background-size: contain

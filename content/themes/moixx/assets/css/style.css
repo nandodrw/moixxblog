@@ -427,7 +427,7 @@ body {
   width: 50%;
   float: left;
   max-width: 100%;
-  margin: 7.5rem 0 2.5em 25%; }
+  margin: 7.5rem 0 2.5em 12.5%; }
   @media screen and (max-width: 1200px) {
     .middle-section-post {
       width: 70%;
@@ -684,6 +684,18 @@ body {
       background-repeat: no-repeat;
       background-position: center;
       background-image: url(../images/isotipo.png); }
+  .left-nav .subscibe-link {
+    position: absolute;
+    bottom: 2.5em;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+    padding: 0.5em 0; }
+    .left-nav .subscibe-link .caption {
+      color: #FFF;
+      font-size: 1em; }
+  .left-nav .subscibe-link:hover {
+    background-color: #ffb7ae; }
 
 @media (max-width: 950px) {
   .left-nav {
@@ -986,11 +998,15 @@ body {
     padding: 1rem 0.2em;
     font-size: 0.9rem;
     float: left;
-    margin-bottom: 1em; }
+    margin-bottom: 1em;
+    border-top-left-radius: 0.2em;
+    border-bottom-left-radius: 0.2em; }
   .general-aside-post-content .sub-btn {
+    border-top-right-radius: 0.2em;
+    border-bottom-right-radius: 0.2em;
     float: left;
     width: 20%;
-    height: 2.3rem;
+    height: 3.1rem;
     background-color: #615d59;
     margin-bottom: 1em;
     background-size: contain;
