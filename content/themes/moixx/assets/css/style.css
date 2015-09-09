@@ -120,6 +120,9 @@ a {
     .show-mobile {
       display: block; } }
 
+.left {
+  float: left; }
+
 @font-face {
   font-family: bg-reg;
   src: url(../fonts/BrandonGrotesque-Regular.woff); }
@@ -661,6 +664,8 @@ body {
     opacity: 0; }
   .left-nav .thumb-category-list .thumb.smaller {
     background-size: 50% auto; }
+  .left-nav .thumb-category-list .moda {
+    background-size: contain; }
   .left-nav .logo-btn {
     height: 20%;
     min-height: 100px;
@@ -975,5 +980,19 @@ body {
     padding-bottom: 0.2em; }
   .general-aside-post-content iframe {
     margin-bottom: 0.2em; }
+  .general-aside-post-content .sub-input {
+    width: 70%;
+    border: none;
+    padding: 1em 0.2em;
+    display: inline-block;
+    float: left;
+    margin-bottom: 1em; }
+  .general-aside-post-content .sub-btn {
+    display: inline-block;
+    float: left;
+    width: 29%;
+    height: 2.25em;
+    background-color: #bbe9de;
+    margin-bottom: 1em; }
 
 /*# sourceMappingURL=style.css.map */
