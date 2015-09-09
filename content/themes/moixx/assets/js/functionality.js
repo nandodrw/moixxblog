@@ -2,16 +2,17 @@
 (function($, d){
 
   $(d).ready(function(){
-    console.log('Flag 1');
-    if($('#featured-posts-container')[0]){
-      console.log('Flag 2');
-      $('#featured-posts-container').ghostRelated({
-          titleClass: '.my-title',
-          tagsClass: '.my-tags-class'
-      });
 
-    }
+    $('#sub-list').click(function(){
+
+      var url = 'http://corporaciontextil.us11.list-manage1.com/subscribe?u=640a49de720704dbcf6c86775&id=31a67406f5'
+
+      window.open(url + '&MERGE0='+ $('#sub-email').val(), '_blank');
+
+    });
 
   });
+
+
 
 })(jQuery, document)

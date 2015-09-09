@@ -981,18 +981,27 @@ body {
   .general-aside-post-content iframe {
     margin-bottom: 0.2em; }
   .general-aside-post-content .sub-input {
-    width: 70%;
+    width: 80%;
     border: none;
-    padding: 1em 0.2em;
-    display: inline-block;
+    padding: 1rem 0.2em;
+    font-size: 0.9rem;
     float: left;
     margin-bottom: 1em; }
   .general-aside-post-content .sub-btn {
-    display: inline-block;
     float: left;
-    width: 29%;
-    height: 2.25em;
+    width: 20%;
+    height: 2.3rem;
+    background-color: #615d59;
+    margin-bottom: 1em;
+    background-size: contain;
+    background-image: url(../images/mail.png);
+    background-repeat: no-repeat;
+    padding: 0.5rem 0.5rem;
+    background-origin: content-box;
+    background-position: center;
+    cursor: pointer; }
+  .general-aside-post-content .sub-btn:hover {
     background-color: #bbe9de;
-    margin-bottom: 1em; }
+    cursor: pointer; }
 
 /*# sourceMappingURL=style.css.map */
