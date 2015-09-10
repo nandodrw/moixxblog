@@ -550,10 +550,10 @@ body {
   float: left;
   width: 100%; }
 
-.home-template .tag-video .video-container, .paged .tag-video .video-container, .tag-template .tag-video .video-container, .author-template .tag-video .video-container {
+.home-template .video-container, .paged .video-container, .tag-template .video-container, .author-template .video-container {
   width: 100%;
   height: 300px; }
-  .home-template .tag-video .video-container iframe, .paged .tag-video .video-container iframe, .tag-template .tag-video .video-container iframe, .author-template .tag-video .video-container iframe {
+  .home-template .video-container iframe, .paged .video-container iframe, .tag-template .video-container iframe, .author-template .video-container iframe {
     width: 100%;
     height: 100%; }
 
@@ -857,6 +857,11 @@ body {
     overflow: hidden;
     text-overflow: ellipsis;
     max-width: 100%; }
+  .post-template .post h1, .post-template .post h2, .post-template .post h3, .post-template .post h4, .post-template .post h5 {
+    font-family: bg-black; }
+  .post-template .post strong {
+    font-family: bg-black;
+    color: #464441; }
 
 .share-buttom {
   height: 12em;
