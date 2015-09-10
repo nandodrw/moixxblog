@@ -660,6 +660,8 @@ body {
     -o-transition: background-color 0.2s;
     transition: background-color 0.2s;
     cursor: pointer; }
+  .left-nav .category-link-list .btn.tag-only {
+    display: none; }
   .left-nav .category-link-list .btn a {
     color: #FFF; }
   .left-nav .category-link-list .btn:hover {
@@ -724,6 +726,25 @@ body {
       font-size: 1em; }
   .left-nav .subscibe-link:hover {
     background-color: #ffb7ae; }
+
+.tag-moda .left-nav .category-link-list .btn.moda,
+.tag-tv .left-nav .category-link-list .btn.tv,
+.tag-bienestar .left-nav .category-link-list .btn.bienestar,
+.tag-belleza .left-nav .category-link-list .btn.belleza,
+.tag-deco .left-nav .category-link-list .btn.deco,
+.tag-destinos .left-nav .category-link-list .btn.destinos {
+  color: #000;
+  background-color: #bbe9de; }
+  .tag-moda .left-nav .category-link-list .btn.moda a,
+  .tag-tv .left-nav .category-link-list .btn.tv a,
+  .tag-bienestar .left-nav .category-link-list .btn.bienestar a,
+  .tag-belleza .left-nav .category-link-list .btn.belleza a,
+  .tag-deco .left-nav .category-link-list .btn.deco a,
+  .tag-destinos .left-nav .category-link-list .btn.destinos a {
+    color: #615d59; }
+
+.tag-template .left-nav .category-link-list .btn.tag-only {
+  display: block; }
 
 @media (max-width: 950px) {
   .left-nav {

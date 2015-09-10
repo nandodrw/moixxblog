@@ -445,6 +445,8 @@ body
     background-color: transparent
     @include prefix(transition, "background-color 0.2s")
     cursor: pointer
+  .category-link-list .btn.tag-only
+    display: none
   .category-link-list .btn a
     color: $blanco
   .category-link-list .btn:hover
@@ -497,6 +499,20 @@ body
       font-size: 1em
   .subscibe-link:hover
     background-color: $pink-pantone
+
+.tag-moda .left-nav .category-link-list .btn.moda,
+.tag-tv .left-nav .category-link-list .btn.tv,
+.tag-bienestar .left-nav .category-link-list .btn.bienestar,
+.tag-belleza .left-nav .category-link-list .btn.belleza,
+.tag-deco .left-nav .category-link-list .btn.deco,
+.tag-destinos .left-nav .category-link-list .btn.destinos
+  color: $negro
+  background-color: $green-pantone
+  a
+    color: $black-pantone
+
+.tag-template .left-nav .category-link-list .btn.tag-only
+  display: block
 
 .left-nav
   @media (max-width: $mobile-break)
