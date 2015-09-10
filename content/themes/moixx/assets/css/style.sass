@@ -333,6 +333,10 @@ body
       opacity: 0.8
 
 .home-template, .paged, .tag-template, .author-template
+  .content .post.tag-tv:hover
+    opacity: 1
+
+.home-template, .paged, .tag-template, .author-template
   .content .post-list-body
     padding: 20px
   @media (max-width: $mobile-break)
@@ -408,7 +412,7 @@ body
   @media (max-width: $mobile-break)
     display: none
 
-.home-template .post-header, .post-list-body
+.home-template .post-header, .post-list-body, .paged .post-header
   @media (max-width: $mobile-break)
     width: 50%
     float: left
