@@ -630,8 +630,7 @@ body
     width: 50%
     background-color: $blanco
     float: left
-    height: 2em
-    font-size: 1.8em
+    height: 1.2em
     @media (max-width: $mobile-break)
       display: none
 
@@ -784,17 +783,17 @@ body
     display: none
   .banner
     width: 100%
-    margin-bottom: 1.2em
+    margin-bottom: 1.2rem
   .division-line
     width: 100%
     height: 3px
     background-color: $pink-pantone
-    margin-bottom: 1.2em
+    margin-bottom: 1.2rem
   .division-line-thin
     width: 100%
     height: 1px
     background-color: $pink-pantone
-    margin-bottom: 1.2em
+    margin-bottom: 1.2rem
   .aside-tittle
     width: 100%
     text-align: left
@@ -802,14 +801,14 @@ body
     border-bottom: 1px solid $pink-pantone
     padding-bottom: 0.2em
   iframe
-    margin-bottom: 0.2em
+    margin-bottom: 0.2rem
   .sub-input
     width: 80%
     border: none
     padding: 1rem 0.2em
     font-size: 0.9rem
     float: left
-    margin-bottom: 1em
+    margin-bottom: 1rem
     border-top-left-radius: 0.2em
     border-bottom-left-radius: 0.2em
   .sub-btn
@@ -819,7 +818,7 @@ body
     width: 20%
     height: 3.1rem
     background-color: $black-pantone
-    margin-bottom: 1em
+    margin-bottom: 1rem
     background-size: contain
     background-image: url(../images/mail.png)
     background-repeat: no-repeat
@@ -830,6 +829,33 @@ body
   .sub-btn:hover
     background-color: $green-pantone
     cursor: pointer
+
+.recommended-content
+  width: 100%
+  .recomendation-container
+    width: 100%
+    padding: 2px 0
+    margin-bottom: 0.1rem
+    border-top: 4px solid lighten($black-pantone, 20%)
+    max-height: 4.3em
+    overflow: hidden
+    a
+      max-height: 4.3em
+  .recomendation
+    width: 100%
+    height: 100%
+    overflow: hidden
+    background-color: $blanco
+    color: $black-pantone
+    margin-bottom: 0
+    text-overflow: ellipsis
+    padding: 0.5em 0.5em
+    @include prefix(box-sizing, border-box)
+    @include prefix(transition, 'background-color 0.2s')
+  .recomendation:hover
+    background-color: $black-pantone
+    color: $blanco
+
 
 
 

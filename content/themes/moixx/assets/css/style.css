@@ -79,6 +79,9 @@ a {
 .margin-top {
   margin-top: 2.074em; }
 
+.margin-top-1 {
+  margin-top: 0.5rem; }
+
 .border-box {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -865,8 +868,7 @@ body {
     width: 50%;
     background-color: #FFF;
     float: left;
-    height: 2em;
-    font-size: 1.8em; }
+    height: 1.2em; }
     @media (max-width: 950px) {
       .post-template .post-navegation .btn-null {
         display: none; } }
@@ -1030,17 +1032,17 @@ body {
       display: none; } }
   .general-aside-post-content .banner {
     width: 100%;
-    margin-bottom: 1.2em; }
+    margin-bottom: 1.2rem; }
   .general-aside-post-content .division-line {
     width: 100%;
     height: 3px;
     background-color: #ffb7ae;
-    margin-bottom: 1.2em; }
+    margin-bottom: 1.2rem; }
   .general-aside-post-content .division-line-thin {
     width: 100%;
     height: 1px;
     background-color: #ffb7ae;
-    margin-bottom: 1.2em; }
+    margin-bottom: 1.2rem; }
   .general-aside-post-content .aside-tittle {
     width: 100%;
     text-align: left;
@@ -1048,14 +1050,14 @@ body {
     border-bottom: 1px solid #ffb7ae;
     padding-bottom: 0.2em; }
   .general-aside-post-content iframe {
-    margin-bottom: 0.2em; }
+    margin-bottom: 0.2rem; }
   .general-aside-post-content .sub-input {
     width: 80%;
     border: none;
     padding: 1rem 0.2em;
     font-size: 0.9rem;
     float: left;
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
     border-top-left-radius: 0.2em;
     border-bottom-left-radius: 0.2em; }
   .general-aside-post-content .sub-btn {
@@ -1065,7 +1067,7 @@ body {
     width: 20%;
     height: 3.1rem;
     background-color: #615d59;
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
     background-size: contain;
     background-image: url(../images/mail.png);
     background-repeat: no-repeat;
@@ -1076,5 +1078,39 @@ body {
   .general-aside-post-content .sub-btn:hover {
     background-color: #bbe9de;
     cursor: pointer; }
+
+.recommended-content {
+  width: 100%; }
+  .recommended-content .recomendation-container {
+    width: 100%;
+    padding: 2px 0;
+    margin-bottom: 0.1rem;
+    border-top: 4px solid #95908b;
+    max-height: 4.3em;
+    overflow: hidden; }
+    .recommended-content .recomendation-container a {
+      max-height: 4.3em; }
+  .recommended-content .recomendation {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #FFF;
+    color: #615d59;
+    margin-bottom: 0;
+    text-overflow: ellipsis;
+    padding: 0.5em 0.5em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: background-color 0.2s;
+    -moz-transition: background-color 0.2s;
+    -ms-transition: background-color 0.2s;
+    -o-transition: background-color 0.2s;
+    transition: background-color 0.2s; }
+  .recommended-content .recomendation:hover {
+    background-color: #615d59;
+    color: #FFF; }
 
 /*# sourceMappingURL=style.css.map */
