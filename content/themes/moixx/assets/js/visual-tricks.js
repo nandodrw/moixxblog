@@ -4,6 +4,8 @@
 
   var setTop = true;
 
+  var recomendedOfset;
+
   function getNavBarTranslation(){
     var topDistance = 400;
     topDistance = topDistance - w.scrollY;
@@ -59,6 +61,15 @@
 
     }
 
+    if(recomendedOfset) {
+      if(w.scrollY >= recomendedOfset.top) {
+        var additionalOffset = w.scrollY - recomendedOfset.top + 80;
+        $('#recommended-content').css({
+          'transform': 'translate3d(0px,  ' + additionalOffset +'px, 0px)'
+        });
+      }
+    }
+
   });
 
   $(d).ready(function(){
@@ -71,6 +82,8 @@
         gutter: '.gutter-sizer'
       }
     });
+
+    recomendedOfset = $('#recommended-content').offset()
 
   });
 
@@ -108,6 +121,8 @@
     }, 500);
 
   });
+
+
 
 
 })(window, document, jQuery);
