@@ -63,7 +63,7 @@
 
     if(recomendedOfset) {
       if(w.scrollY >= recomendedOfset.top) {
-        var additionalOffset = w.scrollY - recomendedOfset.top + 80;
+        var additionalOffset = w.scrollY - recomendedOfset.top + 100;
         $('#recommended-content').css({
           'transform': 'translate3d(0px,  ' + additionalOffset +'px, 0px)'
         });
@@ -83,9 +83,10 @@
       }
     });
 
-    recomendedOfset = $('#recommended-content').offset()
+    recomendedOfset = $('#recommended-content').offset();
 
   });
+
 
   $('.btn').click(function(){
     if(this.dataset.link) {
