@@ -8,6 +8,10 @@
 
   var recomendedMaxOfset;
 
+  var postStart
+
+  var postEnd
+
   function getNavBarTranslation(){
     var topDistance = 400;
     topDistance = topDistance - w.scrollY;
@@ -72,6 +76,13 @@
       }
     }
 
+    if(postStart){
+      var percentage = ((w.scrollY - postStart) / postEnd) * 100;
+      percentage = percentage < 0 ? 0 : percentage;
+      percentage = percentage > 100 ? 100 : percentage;
+      $('.separator .reading-follow').css('width', percentage + '%');
+    }
+
   });
 
   $(d).ready(function(){
@@ -91,6 +102,11 @@
     var postOfset = $('#post-content').offset();
     var postHeight = $('#post-content').height();
     var recomendedHeight = $('#recommended-content').height();
+
+    if(postOfset){
+      postStart = postOfset.top;
+      postEnd = postHeight;
+    }
 
     if(postOfset && postHeight && recomendedHeight) {
       recomendedMaxOfset = postOfset.top + postHeight - recomendedHeight - 150;
