@@ -6,6 +6,8 @@
 
   var recomendedOfset;
 
+  var recomendedMaxOfset;
+
   function getNavBarTranslation(){
     var topDistance = 400;
     topDistance = topDistance - w.scrollY;
@@ -61,8 +63,8 @@
 
     }
 
-    if(recomendedOfset) {
-      if(w.scrollY >= recomendedOfset.top) {
+    if(recomendedOfset && recomendedMaxOfset) {
+      if(w.scrollY >= recomendedOfset.top && w.scrollY < recomendedMaxOfset) {
         var additionalOffset = w.scrollY - recomendedOfset.top + 100;
         $('#recommended-content').css({
           'transform': 'translate3d(0px,  ' + additionalOffset +'px, 0px)'
@@ -84,6 +86,15 @@
     });
 
     recomendedOfset = $('#recommended-content').offset();
+
+
+    var postOfset = $('#post-content').offset();
+    var postHeight = $('#post-content').height();
+    var recomendedHeight = $('#recommended-content').height();
+
+    if(postOfset && postHeight && recomendedHeight) {
+      recomendedMaxOfset = postOfset.top + postHeight - recomendedHeight - 150;
+    }
 
   });
 
