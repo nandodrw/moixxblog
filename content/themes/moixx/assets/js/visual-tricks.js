@@ -119,6 +119,10 @@
 
   }
 
+  w.onload = function(){
+    console.log('finished');
+  }
+
   $(d).ready(function(){
 
     $('#content').isotope({
