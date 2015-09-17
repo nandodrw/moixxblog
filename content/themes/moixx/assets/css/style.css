@@ -807,14 +807,17 @@ body {
   margin-left: 8%;
   border-top: 1px solid #615d59;
   position: relative;
-  height: 16em; }
+  height: 10em; }
   @media (max-width: 950px) {
     .main-footer {
       width: 100%;
       margin-left: 0;
       height: 15em; } }
   .main-footer .logo {
-    height: 15em; }
+    height: 9em; }
+    @media (max-width: 950px) {
+      .main-footer .logo {
+        height: 15em; } }
 
 .post-template .main-footer {
   float: left; }
