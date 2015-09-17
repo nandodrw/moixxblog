@@ -54,8 +54,6 @@
 
   $(w).scroll(function(){
 
-    calculateMovingMetrics();
-
     if(checkLocationPostList()){
 
       if(w.scrollY >= 350) {
@@ -119,9 +117,10 @@
 
   }
 
-  w.onload = function(){
-    console.log('finished');
-  }
+
+  $(w).load(function() {
+    calculateMovingMetrics();
+  });
 
   $(d).ready(function(){
 
@@ -133,8 +132,6 @@
         gutter: '.gutter-sizer'
       }
     });
-
-    calculateMovingMetrics();
 
   });
 
