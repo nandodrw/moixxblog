@@ -70,7 +70,7 @@
     if(recomendedOfset) {
 
       if(w.scrollY >= recomendedOfset.top && w.scrollY < recomendedMaxOfset) {
-        var additionalOffset = w.scrollY - recomendedOfset.top + 200;
+        var additionalOffset = w.scrollY - recomendedOfset.top + 120;
         $('#recommended-content').css({
           'transform': 'translate3d(0px,  ' + additionalOffset +'px, 0px)'
         });
