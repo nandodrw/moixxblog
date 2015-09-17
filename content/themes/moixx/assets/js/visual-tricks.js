@@ -76,7 +76,7 @@
             $('#recommended-content').css({
               'transform': 'translate3d(0px,  ' + additionalOffset +'px, 0px)'
             });
-          } else if(w.scrollY < recomendedOfset) {
+          } else if(w.scrollY < recomendedOfset.top) {
             $('#recommended-content').css({
               'transform': ' translate3d(0, 80px, 0)'
             });
