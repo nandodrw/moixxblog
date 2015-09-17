@@ -69,22 +69,11 @@
 
     if(recomendedOfset) {
 
-      if(recomendedMaxOfset) {
-        if(w.scrollY >= recomendedOfset.top && w.scrollY < recomendedMaxOfset) {
-          var additionalOffset = w.scrollY - recomendedOfset.top + 100;
-          $('#recommended-content').css({
-            'transform': 'translate3d(0px,  ' + additionalOffset +'px, 0px)'
-          });
-        }
-      } else {
-
-        if(w.scrollY >= recomendedOfset.top) {
-          var additionalOffset = w.scrollY - recomendedOfset.top + 100;
-          $('#recommended-content').css({
-            'transform': 'translate3d(0px,  ' + additionalOffset +'px, 0px)'
-          });
-        }
-
+      if(w.scrollY >= recomendedOfset.top && w.scrollY < recomendedMaxOfset) {
+        var additionalOffset = w.scrollY - recomendedOfset.top + 200;
+        $('#recommended-content').css({
+          'transform': 'translate3d(0px,  ' + additionalOffset +'px, 0px)'
+        });
       }
 
     }
@@ -112,7 +101,7 @@
     }
 
     if(postOfset && postHeight && recomendedHeight) {
-      recomendedMaxOfset = postOfset.top + postHeight - recomendedHeight - 150;
+      recomendedMaxOfset = postOfset.top + postHeight - recomendedHeight;
     }
 
   }
