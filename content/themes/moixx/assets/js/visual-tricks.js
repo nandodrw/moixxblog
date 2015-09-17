@@ -67,7 +67,7 @@
 
     }
 
-    if(recomendedOfset && recomendedMaxOfset) {
+    if(recomendedOfset) {
 
       if(recomendedMaxOfset) {
         if(w.scrollY >= recomendedOfset.top && w.scrollY < recomendedMaxOfset) {
