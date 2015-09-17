@@ -54,6 +54,8 @@
 
   $(w).scroll(function(){
 
+    calculateMovingMetrics();
+
     if(checkLocationPostList()){
 
       if(w.scrollY >= 350) {
@@ -98,17 +100,7 @@
 
   });
 
-  $(d).ready(function(){
-
-    $('#content').isotope({
-      layoutMode: 'packery',
-      itemSelector: '.post',
-      percentPosition: true,
-      packery: {
-        gutter: '.gutter-sizer'
-      }
-    });
-
+  function calculateMovingMetrics(){
     recomendedOfset = $('#recommended-content').offset();
 
 
@@ -121,16 +113,26 @@
       postEnd = postHeight;
     }
 
-  });
-
-  window.onload = function () {
-    var postOfset = $('#post-content').offset();
-    var postHeight = $('#post-content').height();
-    var recomendedHeight = $('#recommended-content').height();
     if(postOfset && postHeight && recomendedHeight) {
       recomendedMaxOfset = postOfset.top + postHeight - recomendedHeight - 150;
     }
+
   }
+
+  $(d).ready(function(){
+
+    $('#content').isotope({
+      layoutMode: 'packery',
+      itemSelector: '.post',
+      percentPosition: true,
+      packery: {
+        gutter: '.gutter-sizer'
+      }
+    });
+
+    calculateMovingMetrics();
+
+  });
 
 
   $('.btn').click(function(){
