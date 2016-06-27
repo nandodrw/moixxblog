@@ -31,7 +31,8 @@ config = {
             password : 'blog',
             database : 'ghost_db',
             charset  : 'utf8'
-          }
+          },
+          debug: true
         },
 
         server: {
