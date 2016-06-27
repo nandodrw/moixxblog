@@ -19,7 +19,7 @@ config = {
                 port: '2525',
                 auth: {
                     user: 'postmaster@mg.moixxlife.com',
-                    pass: 'pierfernandez21'
+                    pass: 'c0rp0r4c1iont3xt1ln0wm0ixx'
                 }
             }
         },
