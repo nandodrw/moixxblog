@@ -27,9 +27,9 @@ config = {
           client: 'mysql',
           connection: {
             host     : '173.194.226.175',
-            user     : 'blog',
-            password : 'blog',
-            database : 'ghost_db_bk',
+            user     : 'nando',
+            password : 'nolaweba',
+            database : 'ghost_db',
             charset  : 'utf8'
           }
         },
