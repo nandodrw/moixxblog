@@ -23,12 +23,22 @@ config = {
                 }
             }
         },
+        // database: {
+        //   client: 'mysql',
+        //   connection: {
+        //     host     : '173.194.226.175',
+        //     user     : 'nando',
+        //     password : 'nolaweba',
+        //     database : 'ghost_db',
+        //     charset  : 'utf8'
+        //   }
+        // },
         database: {
           client: 'mysql',
           connection: {
-            host     : '173.194.226.175',
-            user     : 'nando',
-            password : 'nolaweba',
+            host     : '127.0.0.1 ',
+            user     : 'root',
+            password : 'root',
             database : 'ghost_db',
             charset  : 'utf8'
           }
